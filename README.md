@@ -2,9 +2,11 @@
 
 Window Manager: niri
 
+Quickshell: noctalia
+
 Terminal: ghostty
 
-Shell: noctalia
+Shell: fish
 
 Prompt: tide
 
