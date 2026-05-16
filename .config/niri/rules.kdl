@@ -1,0 +1,239 @@
+///////////////// BLUR
+window-rule {
+    draw-border-with-background false
+    background-effect {
+        xray false
+        blur true
+    }
+}
+// Blur
+blur {
+    // off
+    passes 2
+    offset 3
+    noise 0.02
+    saturation 1.0
+}
+
+layer-rule {
+  match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+  background-effect {
+    xray false
+  }
+}
+// Set the overview wallpaper on the backdrop.
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
+}
+////////// NOCTALIA GENERAL
+window-rule {
+    geometry-corner-radius 20
+    clip-to-geometry true
+}
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+///////// WINDOW RULES
+
+// ── Window Rules ─────────────────────────────────────────────
+// Niri window rules use `match` blocks. No blur rules (niri has no blur).
+// No `immediate`/tearing rules (niri handles this differently).
+// No shadow rules (niri has no per-window shadow control).
+
+// --- Floating dialogs (open/save/file pickers) ---
+window-rule {
+    match title="^Open File"
+    match title="^Select a File"
+    match title="^Choose wallpaper"
+    match title="^Open Folder"
+    match title="^Save As"
+    match title="^Library"
+    match title="^File Upload"
+    open-floating true
+}
+
+window-rule {
+    match title=".*wants to save$"
+    match title=".*wants to open$"
+    open-floating true
+}
+
+// --- Floating apps ---
+window-rule {
+    match app-id="blueberry\\.py"
+    open-floating true
+}
+
+window-rule {
+    match app-id="guifetch"
+    open-floating true
+}
+
+window-rule {
+    match app-id="pavucontrol"
+    open-floating true
+}
+window-rule {
+    match app-id="org\\.pulseaudio\\.pavucontrol"
+    open-floating true
+}
+
+window-rule {
+    match app-id="nm-connection-editor"
+    open-floating true
+}
+
+window-rule {
+    match app-id=".*plasmawindowed.*"
+    open-floating true
+}
+
+window-rule {
+    match app-id="kcm_.*"
+    open-floating true
+}
+
+window-rule {
+    match app-id=".*bluedevilwizard"
+    open-floating true
+}
+
+window-rule {
+    match title=".*Welcome"
+    open-floating true
+}
+
+window-rule {
+    match app-id="org\\.freedesktop\\.impl\\.portal\\.desktop\\.kde"
+    open-floating true
+}
+
+window-rule {
+    match app-id="xdg-desktop-portal-gtk"
+    open-floating true
+}
+
+// --- kde-material-you-colors ghost window ---
+// Hyprland moved it off-screen; niri: open floating + no focus
+window-rule {
+    match app-id="plasma-changeicons"
+    open-floating true
+    focus-ring { off; }
+    // niri can't move it to 999999,999999 — it'll still appear briefly, unavoidable
+}
+
+// --- Picture-in-Picture ---
+window-rule {
+    match title="^[Pp]icture[-\\s]?[Ii]n[-\\s]?[Pp]icture"
+    open-floating true
+    // pin equivalent: niri doesn't have a pin-to-all-workspaces yet
+    // PiP position/size: set manually or via future niri rule support
+}
+
+// --- Screen sharing overlay ---
+window-rule {
+    match title=".*is sharing (a window|your screen).*"
+    open-floating true
+}
+
+// --- JetBrains IDEs — suppress focus on transient windows ---
+window-rule {
+    match app-id="jetbrains-.*" is-focused=false title="^$"
+    default-floating-position x=0 y=0  // best effort; no_initial_focus not in niri
+}
+
+// --- Anime game launcher ---
+window-rule {
+    match app-id="moe\\.launcher\\.an-anime-game-launcher"
+    open-floating true
+    default-column-width { fixed 1400; }
+}
+
+// --- Roblox (Sober) ---
+window-rule {
+    match app-id="org\\.vinegarhq\\.Sober" title=".*Join.*"
+    open-floating true
+    default-column-width { fixed 1600; }
+}
+
+// --- steam_app_default ---
+window-rule {
+    match app-id="steam_app_default"
+    open-floating true
+}
+
+// --- Steam games / tearing ---
+// Niri tearing support: per-window via variable-refresh / tearing flag
+// As of niri 0.1.x, tearing is experimental — enable globally or per-rule
+window-rule {
+    match app-id="steam_app_.*"
+    // tearing not yet stable in niri; uncomment when available:
+    // variable-refresh-rate true
+}
+
+// --- Warp terminal: force tiled (Hyprland had tile on) ---
+window-rule {
+    match app-id="dev\\.warp\\.Warp"
+    open-floating false  // ensure it tiles
+}
+// // EQUIBOP BLUR
+// window-rule {
+//     match app-id="equibop"
+//     open-floating true
+//     opacity 0.92
+// }
+// FEISHIN BLUR
+window-rule {
+    match app-id="feishin"
+    open-floating true
+    draw-border-with-background false
+    opacity 0.92
+}
+
+// Thunar BLUR
+window-rule {
+    match app-id="^thunar$"
+    opacity 0.92
+    background-effect {
+        blur true
+    }
+}
+// Ghostty BLUR
+window-rule {
+    match app-id="^com.mitchellh.ghostty$"
+    opacity 0.92
+    background-effect {
+        blur true
+    }
+}
+//ZED BLUR
+window-rule {
+    match app-id="^dev.zed.Zed$"
+    opacity 0.92
+    draw-border-with-background false
+    background-effect {
+        blur true
+    }
+}
+
+// BRAVE BLUR
+// General Brave rule
+// window-rule {
+//     match app-id="^brave-origin-beta$"
+//     opacity 0.92
+//     background-effect {
+//         blur true
+//     }
+// }
+
+// // Youtube override
+// window-rule {
+//     match title="YouTube - Brave"
+//     opacity 1.0
+//     background-effect {
+//         blur false
+//     }
+// }

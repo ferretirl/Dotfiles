@@ -1,0 +1,74 @@
+//Keybind file
+binds {
+    // ── Focus movement ──
+    // Left/Right = scroll columns, Up/Down = switch workspace
+    Mod+Left                    { focus-column-left; }
+    Mod+Right                   { focus-column-right; }
+    Mod+Up                      { focus-window-or-monitor-up; }
+    Mod+Down                    { focus-window-or-monitor-down; }
+
+    // ── Window movement ──
+    Mod+Shift+Left              { move-column-left; }
+    Mod+Shift+Right             { move-column-right; }
+    Mod+Shift+Up                { move-column-to-workspace-up; }
+    Mod+Shift+Down              { move-column-to-workspace-down; }
+
+    // ── Close window ──
+    Alt+F4                      { close-window; }
+    Mod+Q                       { close-window; }
+
+    // ── Floating ──
+    Mod+Alt+Space               { toggle-window-floating; }
+
+    // ── Fullscreen/Maximize ──
+    Mod+F                       { fullscreen-window; }
+    Mod+N                       { maximize-column; }
+
+    // ── Workspace navigation ──
+    Ctrl+Mod+Down               { focus-workspace-down; }
+    Ctrl+Mod+Up                 { focus-workspace-up; }
+
+    // ── Move window to workspace ──
+    Mod+Alt+Page_Down           { move-column-to-workspace-down; }
+    Mod+Alt+Page_Up             { move-column-to-workspace-up; }
+    Ctrl+Mod+Shift+Right        { move-column-to-workspace-down; }
+    Ctrl+Mod+Shift+Left         { move-column-to-workspace-up; }
+
+    // ── Mouse workspace/window scroll ──
+    Mod+WheelScrollUp           { focus-workspace-up; }
+    Mod+WheelScrollDown         { focus-workspace-down; }
+
+    // ── Workspace preview ──
+    Mod+S                       { toggle-overview; }
+    // ── Apps ──
+    Mod+T                       { spawn "ghostty" "+new-window"; }
+    Mod+E                       { spawn "thunar"; }
+    Mod+W                       { spawn "brave-origin-beta"; }
+    Mod+C                       { spawn "zeditor"; }
+    Mod+X                       { spawn-sh "kate || gnome-text-editor || emacs"; }
+    Ctrl+Mod+V                  { spawn-sh "pavucontrol-qt || pavucontrol"; }
+    Mod+I                       { spawn-sh "XDG_CURRENT_DESKTOP=gnome systemsettings"; }
+    Ctrl+Shift+Escape           { spawn "ghostty" "-e" "btop"; }
+    Ctrl+Mod+Shift+Alt+W        { spawn-sh "wps || onlyoffice-desktopeditors || libreoffice"; }
+    Mod+D                       { spawn "niri-scratchpad" "target" "--spawn" "equibop" "appid" "equibop"; }
+    Mod+M                       { spawn "niri-scratchpad" "target" "--spawn" "feishin" "appid" "feishin"; }
+
+    // ── Screenshot (default niri) ──
+    Mod+Shift+s                 { screenshot; }
+
+    // ── Color picker ──
+    Mod+Shift+C                 { spawn "hyprpicker" "-a"; }
+
+    // ── Niri session ──
+    Mod+Shift+E                 { quit; }    // exit niri
+
+    // ── Noctalia IPC ──
+    Mod+V                       { spawn-sh "qs -c noctalia-shell ipc call launcher clipboard"; }
+    Mod+Space repeat=false      { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    Mod+J                       { spawn-sh "qs -c noctalia-shell ipc call bar toggle"; }
+    Ctrl+Mod+T                  { spawn-sh "killall -9 qs && sleep 1 && qs -c noctalia-shell"; }
+
+    // -- Scripts --
+    Mod+Shift+V { spawn "bash" "/home/ferret/.config/niri/scripts/afk-toggle.sh"; }
+
+}
