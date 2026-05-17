@@ -186,38 +186,38 @@ window-rule {
 //     opacity 0.92
 // }
 // FEISHIN BLUR
-window-rule {
-    match app-id="feishin"
-    open-floating true
-    draw-border-with-background false
-    opacity 0.92
-}
+// window-rule {
+//     match app-id="feishin"
+//     open-floating true
+//     draw-border-with-background false
+//     opacity 0.92
+// }
 
-// Thunar BLUR
-window-rule {
-    match app-id="^thunar$"
-    opacity 0.92
-    background-effect {
-        blur true
-    }
-}
-// Ghostty BLUR
-window-rule {
-    match app-id="^com.mitchellh.ghostty$"
-    opacity 0.92
-    background-effect {
-        blur true
-    }
-}
-//ZED BLUR
-window-rule {
-    match app-id="^dev.zed.Zed$"
-    opacity 0.92
-    draw-border-with-background false
-    background-effect {
-        blur true
-    }
-}
+// // Thunar BLUR
+// window-rule {
+//     match app-id="^thunar$"
+//     opacity 0.92
+//     background-effect {
+//         blur true
+//     }
+// }
+// // Ghostty BLUR
+// window-rule {
+//     match app-id="^com.mitchellh.ghostty$"
+//     opacity 0.92
+//     background-effect {
+//         blur true
+//     }
+// }
+// //ZED BLUR
+// window-rule {
+//     match app-id="^dev.zed.Zed$"
+//     opacity 0.92
+//     draw-border-with-background false
+//     background-effect {
+//         blur true
+//     }
+// }
 
 // BRAVE BLUR
 // General Brave rule
