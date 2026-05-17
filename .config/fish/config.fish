@@ -14,14 +14,9 @@ if status is-interactive
         kill (pgrep -f "sleep infinity")
         kill (pgrep -f "robloxclicker.sh")
     end
-
     alias clear "printf '\033[2J\033[3J\033[1;1H'"
-    alias celar "printf '\033[2J\033[3J\033[1;1H'"
-    alias claer "printf '\033[2J\033[3J\033[1;1H'"
-    alias pamcan pacman
-    alias q 'qs -c ii'
     if test "$TERM" != linux
-        alias ls 'eza --icons'
+        alias ls 'eza --icons -a'
     end
     if test "$TERM" = xterm-kitty
         alias ssh 'kitten ssh'
