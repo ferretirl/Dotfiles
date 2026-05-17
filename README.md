@@ -10,4 +10,4 @@ Shell: fish
 
 Prompt: tide
 
-Editor: zed
+Editor: neovim
