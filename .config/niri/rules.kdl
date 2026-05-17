@@ -185,31 +185,31 @@ window-rule {
 //     open-floating true
 //     opacity 0.92
 // }
-// FEISHIN BLUR
-// window-rule {
-//     match app-id="feishin"
-//     open-floating true
-//     draw-border-with-background false
-//     opacity 0.92
-// }
+//FEISHIN BLUR
+window-rule {
+    match app-id="feishin"
+    open-floating true
+    draw-border-with-background false
+    opacity 0.92
+}
 
-// // Thunar BLUR
-// window-rule {
-//     match app-id="^thunar$"
-//     opacity 0.92
-//     background-effect {
-//         blur true
-//     }
-// }
-// // Ghostty BLUR
-// window-rule {
-//     match app-id="^com.mitchellh.ghostty$"
-//     opacity 0.92
-//     background-effect {
-//         blur true
-//     }
-// }
-// //ZED BLUR
+// Thunar BLUR
+window-rule {
+    match app-id="^thunar$"
+    opacity 0.92
+    background-effect {
+        blur true
+    }
+}
+// Ghostty BLUR
+window-rule {
+    match app-id="^com.mitchellh.ghostty$"
+    opacity 0.92
+    background-effect {
+        blur true
+    }
+}
+// // ZED BLUR
 // window-rule {
 //     match app-id="^dev.zed.Zed$"
 //     opacity 0.92
@@ -219,21 +219,21 @@ window-rule {
 //     }
 // }
 
-// BRAVE BLUR
-// General Brave rule
-// window-rule {
-//     match app-id="^brave-origin-beta$"
-//     opacity 0.92
-//     background-effect {
-//         blur true
-//     }
-// }
+//BRAVE BLUR
+//General Brave rule
+window-rule {
+    match app-id="^brave-origin-beta$"
+    opacity 0.92
+    background-effect {
+        blur true
+    }
+}
 
-// // Youtube override
-// window-rule {
-//     match title="YouTube - Brave"
-//     opacity 1.0
-//     background-effect {
-//         blur false
-//     }
-// }
+// Youtube override
+window-rule {
+    match title="YouTube - Brave"
+    opacity 1.0
+    background-effect {
+        blur false
+    }
+}

@@ -44,7 +44,7 @@ binds {
     Mod+T                       { spawn "ghostty" "+new-window"; }
     Mod+E                       { spawn "thunar"; }
     Mod+W                       { spawn "brave-origin-beta"; }
-    Mod+C                       { spawn "zeditor"; }
+    Mod+C                       { spawn "ghostty" "-e" "nvim"; }
     Mod+X                       { spawn-sh "kate || gnome-text-editor || emacs"; }
     Ctrl+Mod+V                  { spawn-sh "pavucontrol-qt || pavucontrol"; }
     Mod+I                       { spawn-sh "XDG_CURRENT_DESKTOP=gnome systemsettings"; }
