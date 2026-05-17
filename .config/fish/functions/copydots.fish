@@ -1,9 +1,9 @@
 function copydots
     echo "Copying dots"
 
-    echo "  → niri"
-    rm -rf ~/Dotfiles/.config/niri
-    cp -r ~/.config/niri ~/Dotfiles/.config/
+    echo "  → hyprland"
+    rm -rf ~/Dotfiles/.config/hypr
+    cp -r ~/.config/hypr ~/Dotfiles/.config/
 
     echo "  → ghostty"
     rm -rf ~/Dotfiles/.config/ghostty

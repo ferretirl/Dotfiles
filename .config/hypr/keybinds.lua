@@ -1,0 +1,85 @@
+-- Keybinds
+local noctalia = "qs -c noctalia-shell ipc call"
+
+-- Focus movement
+hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
+hl.bind("SUPER + right", hl.dsp.focus({ direction = "right" }))
+hl.bind("SUPER + up", hl.dsp.focus({ direction = "up" }))
+hl.bind("SUPER + down", hl.dsp.focus({ direction = "down" }))
+hl.bind("SUPER + H", hl.dsp.focus({ direction = "left" }))
+hl.bind("SUPER + L", hl.dsp.focus({ direction = "right" }))
+hl.bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
+hl.bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
+
+-- Window movement
+hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
+hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
+hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({ workspace = "r-1" }))
+hl.bind("SUPER + SHIFT + down", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind("SUPER + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
+hl.bind("SUPER + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
+hl.bind("SUPER + SHIFT + K", hl.dsp.window.move({ workspace = "r-1" }))
+hl.bind("SUPER + SHIFT + J", hl.dsp.window.move({ workspace = "r+1" }))
+
+-- Close window
+hl.bind("ALT + F4", hl.dsp.window.close())
+hl.bind("SUPER + Q", hl.dsp.window.close())
+
+-- Floating
+hl.bind("SUPER + ALT + space", hl.dsp.window.float({ action = "toggle" }))
+
+-- Fullscreen / maximize
+hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
+
+-- Workspace navigation
+hl.bind("CTRL + SUPER + right", hl.dsp.focus({ workspace = "r+1" }))
+hl.bind("CTRL + SUPER + left", hl.dsp.focus({ workspace = "r-1" }))
+hl.bind("CTRL + SUPER + L", hl.dsp.focus({ workspace = "r+1" }))
+hl.bind("CTRL + SUPER + H", hl.dsp.focus({ workspace = "r-1" }))
+
+-- Move window to workspace
+hl.bind("SUPER + ALT + Next", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind("SUPER + ALT + Prior", hl.dsp.window.move({ workspace = "r-1" }))
+hl.bind("CTRL + SUPER + SHIFT + right", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind("CTRL + SUPER + SHIFT + left", hl.dsp.window.move({ workspace = "r-1" }))
+
+-- Mouse scroll workspace
+hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r+1" }))
+hl.bind("SUPER + mouse_up", hl.dsp.focus({ workspace = "r-1" }))
+
+-- Mouse drag/resize
+hl.bind("SUPER + mouse:272", hl.dsp.window.drag(), { mouse = true })
+hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
+
+-- Apps
+hl.bind("SUPER + T", hl.dsp.exec_cmd("ghostty +new-window"))
+hl.bind("SUPER + E", hl.dsp.exec_cmd("thunar"))
+hl.bind("SUPER + W", hl.dsp.exec_cmd("brave-origin-beta"))
+hl.bind("SUPER + C", hl.dsp.exec_cmd("ghostty -e nvim"))
+hl.bind("SUPER + X", hl.dsp.exec_cmd("kate"))
+hl.bind("CTRL + SUPER + V", hl.dsp.exec_cmd("pavucontrol-qt"))
+hl.bind("SUPER + I", hl.dsp.exec_cmd("env XDG_CURRENT_DESKTOP=gnome systemsettings"))
+hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("ghostty -e btop"))
+hl.bind("CTRL + SUPER + SHIFT + ALT + W", hl.dsp.exec_cmd("libreoffice"))
+
+-- Scratchpads
+hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("equibop"))
+hl.bind("SUPER + M", hl.dsp.workspace.toggle_special("feishin"))
+
+-- Screenshot
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region --freeze"))
+
+-- Color picker
+hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
+
+-- Exit
+hl.bind("SUPER + SHIFT + E", hl.dsp.exit())
+
+-- Noctalia IPC
+hl.bind("SUPER + V", hl.dsp.exec_cmd(noctalia .. " launcher clipboard"))
+hl.bind("SUPER + Super_L", hl.dsp.exec_cmd(noctalia .. " launcher toggle"), { release = true })
+hl.bind("SUPER + O", hl.dsp.exec_cmd(noctalia .. " bar toggle"))
+hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 qs && sleep 1 && qs -c noctalia-shell"))
+
+-- Scripts
+hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("bash /home/ferret/.config/niri/scripts/afk-toggle.sh"))
