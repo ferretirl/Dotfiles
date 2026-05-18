@@ -59,14 +59,14 @@ hl.window_rule({
 -- equibop scratchpad
 hl.window_rule({
 	match = { class = "equibop" },
-	float = true,
+	float = false,
 	workspace = "special:equibop",
 })
 
 -- feishin scratchpad + opacity
 hl.window_rule({
 	match = { class = "feishin" },
-	float = true,
+	float = false,
 	workspace = "special:feishin",
 	opacity = 0.95,
 })

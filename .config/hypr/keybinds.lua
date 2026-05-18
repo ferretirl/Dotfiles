@@ -14,12 +14,12 @@ hl.bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
 -- Window movement
 hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
 hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
-hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({ workspace = "r-1" }))
-hl.bind("SUPER + SHIFT + down", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "up" }))
+hl.bind("SUPER + SHIFT + down", hl.dsp.window.move({ direction = "down" }))
 hl.bind("SUPER + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
 hl.bind("SUPER + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
-hl.bind("SUPER + SHIFT + K", hl.dsp.window.move({ workspace = "r-1" }))
-hl.bind("SUPER + SHIFT + J", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind("SUPER + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
+hl.bind("SUPER + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
 
 -- Close window
 hl.bind("ALT + F4", hl.dsp.window.close())
@@ -38,10 +38,10 @@ hl.bind("CTRL + SUPER + L", hl.dsp.focus({ workspace = "r+1" }))
 hl.bind("CTRL + SUPER + H", hl.dsp.focus({ workspace = "r-1" }))
 
 -- Move window to workspace
-hl.bind("SUPER + ALT + Next", hl.dsp.window.move({ workspace = "r+1" }))
-hl.bind("SUPER + ALT + Prior", hl.dsp.window.move({ workspace = "r-1" }))
 hl.bind("CTRL + SUPER + SHIFT + right", hl.dsp.window.move({ workspace = "r+1" }))
 hl.bind("CTRL + SUPER + SHIFT + left", hl.dsp.window.move({ workspace = "r-1" }))
+hl.bind("CTRL + SUPER + SHIFT + L", hl.dsp.window.move({ workspace = "r+1" }))
+hl.bind("CTRL + SUPER + SHIFT + H", hl.dsp.window.move({ workspace = "r-1" }))
 
 -- Mouse scroll workspace
 hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "r+1" }))
@@ -64,8 +64,9 @@ hl.bind("CTRL + SUPER + SHIFT + ALT + W", hl.dsp.exec_cmd("libreoffice"))
 
 -- Scratchpads
 hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("equibop"))
+hl.bind("SUPER + D", hl.dsp.exec_cmd("equibop"))
 hl.bind("SUPER + M", hl.dsp.workspace.toggle_special("feishin"))
-
+hl.bind("SUPER + M", hl.dsp.exec_cmd("feishin"))
 -- Screenshot
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region --freeze"))
 
@@ -82,4 +83,4 @@ hl.bind("SUPER + O", hl.dsp.exec_cmd(noctalia .. " bar toggle"))
 hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 qs && sleep 1 && qs -c noctalia-shell"))
 
 -- Scripts
-hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("bash /home/ferret/.config/niri/scripts/afk-toggle.sh"))
+hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("bash /home/ferret/.config/hypr/scripts/afk-toggle.sh"))

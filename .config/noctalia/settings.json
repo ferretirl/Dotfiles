@@ -75,7 +75,7 @@
         "showOnWorkspaceSwitch": true,
         "showOutline": false,
         "useSeparateOpacity": false,
-        "widgetSpacing": 15,
+        "widgetSpacing": 0,
         "widgets": {
             "center": [
                 {
@@ -111,12 +111,12 @@
                     "colorizeIcons": false,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
-                    "maxWidth": 800,
-                    "scrollingMode": "never",
+                    "maxWidth": 600,
+                    "scrollingMode": "hover",
                     "showIcon": false,
                     "showText": true,
                     "textColor": "none",
-                    "useFixedWidth": true
+                    "useFixedWidth": false
                 }
             ],
             "right": [
@@ -168,11 +168,11 @@
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
-                    "maxWidth": 300,
+                    "maxWidth": 250,
                     "panelShowAlbumArt": true,
                     "scrollingMode": "hover",
                     "showAlbumArt": true,
-                    "showArtistFirst": true,
+                    "showArtistFirst": false,
                     "showProgressRing": true,
                     "showVisualizer": false,
                     "textColor": "none",
