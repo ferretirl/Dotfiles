@@ -83,4 +83,4 @@ hl.bind("SUPER + O", hl.dsp.exec_cmd(noctalia .. " bar toggle"))
 hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 qs && sleep 1 && qs -c noctalia-shell"))
 
 -- Scripts
-hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("bash /home/ferret/.config/hypr/scripts/afk-toggle.sh"))
+hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("bash ~/.config/hypr/scripts/afk-toggle.sh"))

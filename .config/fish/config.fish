@@ -4,7 +4,7 @@ if status is-interactive
     # No greeting
     set fish_greeting
     fastfetch
-    fish_add_path /home/ferret/.cargo/bin
+    fish_add_path ~/.cargo/bin
 
     function afk-on
         systemd-inhibit --what=idle:sleep --who="Roblox AFK" --why="overnight farming" sleep infinity &

@@ -324,7 +324,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/ferret/Pictures/csm/4579caacebdec7f454e97ae203a6c0d8.png",
+        "avatarImage": "~/Pictures/csm/4579caacebdec7f454e97ae203a6c0d8.png",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -666,7 +666,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/ferret/Pictures/Wallpapers",
+        "directory": "~/Pictures/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
