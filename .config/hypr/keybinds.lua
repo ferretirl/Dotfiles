@@ -78,7 +78,7 @@ hl.bind("SUPER + SHIFT + E", hl.dsp.exit())
 
 -- Noctalia IPC
 hl.bind("SUPER + V", hl.dsp.exec_cmd(noctalia .. " launcher clipboard"))
-hl.bind("SUPER + Super_L", hl.dsp.exec_cmd(noctalia .. " launcher toggle"), { release = true })
+hl.bind("SUPER + SPACE", hl.dsp.exec_cmd(noctalia .. " launcher toggle"))
 hl.bind("SUPER + O", hl.dsp.exec_cmd(noctalia .. " bar toggle"))
 hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 qs && sleep 1 && qs -c noctalia-shell"))
 
