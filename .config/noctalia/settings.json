@@ -168,7 +168,7 @@
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
-                    "maxWidth": 250,
+                    "maxWidth": 450,
                     "panelShowAlbumArt": true,
                     "scrollingMode": "hover",
                     "showAlbumArt": true,
@@ -176,7 +176,7 @@
                     "showProgressRing": true,
                     "showVisualizer": false,
                     "textColor": "none",
-                    "useFixedWidth": true,
+                    "useFixedWidth": false,
                     "visualizerType": "linear"
                 }
             ]
@@ -335,7 +335,7 @@
         "enableLockScreenMediaControls": false,
         "enableShadows": false,
         "forceBlackScreenCorners": false,
-        "iRadiusRatio": 0,
+        "iRadiusRatio": 0.5,
         "keybinds": {
             "keyDown": [
                 "Down"
@@ -369,7 +369,7 @@
         ],
         "lockScreenTint": 0,
         "passwordChars": false,
-        "radiusRatio": 0,
+        "radiusRatio": 0.5,
         "reverseScroll": false,
         "scaleRatio": 1,
         "screenRadiusRatio": 1,
@@ -648,11 +648,11 @@
     },
     "ui": {
         "boxBorderEnabled": true,
-        "fontDefault": "JetBrainsMono NF Medium",
+        "fontDefault": "MesloLGS Nerd Font Mono",
         "fontDefaultScale": 1,
-        "fontFixed": "JetBrainsMono NF Medium",
+        "fontFixed": "MesloLGS Nerd Font Mono",
         "fontFixedScale": 1,
-        "panelBackgroundOpacity": 0.93,
+        "panelBackgroundOpacity": 0.9500000000000001,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
         "settingsPanelMode": "attached",

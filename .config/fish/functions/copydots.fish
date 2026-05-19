@@ -39,5 +39,9 @@ function copydots
     echo "  → mimeapps.list"
     cp ~/.config/mimeapps.list ~/Dotfiles/.config/
 
+    echo "  → yazi"
+    rm -rf ~/Dotfiles/.config/yazi/
+    cp -r ~/.config/yazi/ ~/Dotfiles/.config/
+
     echo "Done!"
 end

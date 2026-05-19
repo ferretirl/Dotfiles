@@ -1,4 +1,11 @@
--- Keybinds
+-- ██╗  ██╗███████╗██╗   ██╗██████╗ ██╗███╗   ██╗██████╗ ██╗███╗   ██╗ ██████╗
+-- ██║ ██╔╝██╔════╝╚██╗ ██╔╝██╔══██╗██║████╗  ██║██╔══██╗██║████╗  ██║██╔════╝
+-- █████╔╝ █████╗   ╚████╔╝ ██████╔╝██║██╔██╗ ██║██║  ██║██║██╔██╗ ██║██║  ███╗
+-- ██╔═██╗ ██╔══╝    ╚██╔╝  ██╔══██╗██║██║╚██╗██║██║  ██║██║██║╚██╗██║██║   ██║
+-- ██║  ██╗███████╗   ██║   ██████╔╝██║██║ ╚████║██████╔╝██║██║ ╚████║╚██████╔╝
+-- ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝
+-------------------------------------------------------------------------------
+
 local noctalia = "qs -c noctalia-shell ipc call"
 
 -- Focus movement
@@ -53,7 +60,7 @@ hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Apps
 hl.bind("SUPER + T", hl.dsp.exec_cmd("ghostty +new-window"))
-hl.bind("SUPER + E", hl.dsp.exec_cmd("thunar"))
+hl.bind("SUPER + E", hl.dsp.exec_cmd("ghostty -e yazi"))
 hl.bind("SUPER + W", hl.dsp.exec_cmd("brave-origin-beta"))
 hl.bind("SUPER + C", hl.dsp.exec_cmd("ghostty -e nvim"))
 hl.bind("SUPER + X", hl.dsp.exec_cmd("kate"))

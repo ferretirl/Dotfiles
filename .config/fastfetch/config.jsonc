@@ -1,137 +1,100 @@
 {
   "logo": {
     "type": "auto",
-    "source": "~/.config/fastfetch/Frieren.png",
-    "height": 20,
+    "source": "~/.config/fastfetch/frieren.txt",
+    "height": 10,
     "padding": {
       "top": 2,
       "left": 3,
     },
   },
+  "display": {
+    "separator": " 󰑃  "
+  },
   "modules": [
     "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐",
-    },
-    {
-      "type": "host",
-      "key": "󰌢  PC",
-      "keyColor": "green",
-    },
-    {
-      "type": "cpu",
-      "key": "│ ├󰻠 ",
-      "keyColor": "green",
-    },
-    {
-      "type": "gpu",
-      "key": "│ ├󰍹 ",
-      "keyColor": "green",
-    },
-    {
-      "type": "memory",
-      "key": "│ ├󰑭 ",
-      "keyColor": "green",
-    },
-    {
-      "type": "disk",
-      "key": "└ └󰋊 ",
-      "keyColor": "green",
-    },
-    {
-      "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘",
-    },
-    // "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌──────────────────────Software──────────────────────┐",
-    },
+    "break",
     {
       "type": "os",
-      "key": "  OS",
-      "keyColor": "yellow",
+      "key": " DISTRO",
+      "keyColor": "yellow"
     },
     {
       "type": "kernel",
-      "key": "│ ├󰌽 ",
-      "keyColor": "yellow",
-    },
-    // {
-    //     "type": "bios",
-    //     "key": "│ ├󰖡 ",
-    //     "keyColor": "yellow"
-    // },
-    {
-      "type": "packages",
-      "key": "│ ├󰏗 ",
-      "keyColor": "yellow",
+      "key": "│ ├",
+      "keyColor": "yellow"
     },
     {
       "type": "shell",
-      "key": "└ └󰞷 ",
-      "keyColor": "yellow",
-    },
-    // "break",
-    {
-      "type": "de",
-      "key": "󰧨  DE",
-      "keyColor": "blue",
-    },
-    {
-      "type": "lm",
-      "key": "│ ├󰍁 ",
-      "keyColor": "blue",
+      "key": "│ └",
+      "keyColor": "yellow"
     },
     {
       "type": "wm",
-      "key": "│ ├󱂬 ",
-      "keyColor": "blue",
+      "key": " DE/WM",
+      "keyColor": "blue"
     },
     {
       "type": "wmtheme",
-      "key": "│ ├󰉦 ",
-      "keyColor": "blue",
+      "key": "│ ├󰉼",
+      "keyColor": "blue"
     },
     {
       "type": "terminal",
-      "key": "└ └󰆍 ",
-      "keyColor": "blue",
+      "key": "│ └",
+      "keyColor": "blue"
     },
     {
-      "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘",
-    },
-    // "break",
-    {
-      "type": "custom",
-      "format": "\u001b[90m┌────────────────────Uptime / Age / DT───────────────┐",
+      "type": "host",
+      "key": "󰌢 SYSTEM",
+      "keyColor": "green"
     },
     {
-      "type": "command",
-      "key": "  ›  OS Age  ",
-      "keyColor": "magenta",
-      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
+      "type": "cpu",
+      "key": "│ ├󰻠",
+      "keyColor": "green"
+    },
+    {
+      "type": "display",
+      "key": "│ ├󰍹",
+      "keyColor": "green",
+      "compactType": "original-with-refresh-rate"
+    },
+    {
+      "type": "memory",
+      "key": "│ ├󰾆",
+      "keyColor": "green"
     },
     {
       "type": "uptime",
-      "key": "  ›  Uptime  ",
-      "keyColor": "magenta",
+      "key": "│ ├󰅐",
+      "keyColor": "green"
     },
     {
-      "type": "datetime",
-      "key": "  ›  DateTime  ",
-      "keyColor": "magenta",
+      "type": "display",
+      "key": "│ └󰍹",
+      "keyColor": "green"
+    },
+    {
+      "type": "sound",
+      "key": " AUDIO",
+      "format": "{2}",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "player",
+      "key": "│ ├󰥠",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "media",
+      "key": "│ └󰝚",
+      "keyColor": "magenta"
     },
     {
       "type": "custom",
-      "format": "\u001b[90m└────────────────────────────────────────────────────┘",
+      "format": "  \u001b[37m  \u001b[35m  "
     },
-    {
-      "type": "colors",
-      "paddingLeft": 2,
-      "symbol": "circle",
-    },
-  ],
+    "break",
+  ]
 }
