@@ -88,8 +88,8 @@ hl.window_rule({
 -- Opacity rules
 hl.window_rule({ match = { class = "^thunar$" }, opacity = 0.95 })
 hl.window_rule({ match = { class = "^com.mitchellh.ghostty$" }, opacity = 0.95 })
-hl.window_rule({ match = { class = "^brave-origin-beta$" }, opacity = 0.95 })
-hl.window_rule({ match = { title = "YouTube - Brave" }, opacity = 1.0 })
+-- hl.window_rule({ match = { class = "^brave-origin-beta$" }, opacity = 0.95 })
+hl.window_rule({ match = { title = "*.YouTube - Brave Origin" }, opacity = 1.0 })
 
 -- Fix XWayland drags
 hl.window_rule({

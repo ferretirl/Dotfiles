@@ -71,9 +71,9 @@ hl.bind("CTRL + SUPER + SHIFT + ALT + W", hl.dsp.exec_cmd("libreoffice"))
 
 -- Scratchpads
 hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("equibop"))
-hl.bind("SUPER + D", hl.dsp.exec_cmd("equibop"))
+hl.bind("SUPER + D", hl.dsp.exec_cmd("equibop", { float = false, move = { 0, 0 } }))
 hl.bind("SUPER + M", hl.dsp.workspace.toggle_special("feishin"))
-hl.bind("SUPER + M", hl.dsp.exec_cmd("feishin"))
+hl.bind("SUPER + M", hl.dsp.exec_cmd("feishin", { float = false, move = { 0, 0 } }))
 -- Screenshot
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region --freeze"))
 

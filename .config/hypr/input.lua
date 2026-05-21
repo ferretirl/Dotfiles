@@ -8,7 +8,7 @@
 
 hl.config({
 	input = {
-		kb_layout = "cz,us",
+		kb_layout = "us,cz",
 		kb_options = "grp:alt_shift_toggle",
 		repeat_delay = 200,
 		repeat_rate = 50,
