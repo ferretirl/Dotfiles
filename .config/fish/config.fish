@@ -1,5 +1,7 @@
 # Commands to run in interactive sessions can go here
 set -gx SUDO_EDITOR nvim
+set -Ux EDITOR nvim
+set -Ux VISUAL nvim
 if status is-interactive
     # No greeting
     set fish_greeting

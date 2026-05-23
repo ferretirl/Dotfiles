@@ -207,11 +207,11 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "rainbow",
+        "generationMethod": "faithful",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Rose Pine",
+        "predefinedScheme": "Catppuccin Lavender",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -324,7 +324,7 @@
         "animationDisabled": true,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "~/Pictures/csm/4579caacebdec7f454e97ae203a6c0d8.png",
+        "avatarImage": "/home/ferret/Pictures/hanako/image_proxy.jpeg",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -338,7 +338,8 @@
         "iRadiusRatio": 0.5,
         "keybinds": {
             "keyDown": [
-                "Down"
+                "Down",
+                "Ctrl+J"
             ],
             "keyEnter": [
                 "Return",
@@ -348,16 +349,20 @@
                 "Esc"
             ],
             "keyLeft": [
-                "Left"
+                "Left",
+                "Ctrl+H"
             ],
             "keyRemove": [
-                "Del"
+                "Del",
+                "Ctrl+D"
             ],
             "keyRight": [
-                "Right"
+                "Right",
+                "Ctrl+L"
             ],
             "keyUp": [
-                "Up"
+                "Up",
+                "Ctrl+K"
             ]
         },
         "language": "",
@@ -621,10 +626,6 @@
             },
             {
                 "enabled": true,
-                "id": "code"
-            },
-            {
-                "enabled": true,
                 "id": "cava"
             },
             {
@@ -633,25 +634,21 @@
             },
             {
                 "enabled": true,
-                "id": "kitty"
-            },
-            {
-                "enabled": true,
                 "id": "ghostty"
             },
             {
                 "enabled": true,
-                "id": "zed"
+                "id": "kitty"
             }
         ],
         "enableUserTheming": true
     },
     "ui": {
         "boxBorderEnabled": true,
-        "fontDefault": "MesloLGS Nerd Font Mono",
-        "fontDefaultScale": 1,
-        "fontFixed": "MesloLGS Nerd Font Mono",
-        "fontFixedScale": 1,
+        "fontDefault": "Maple Mono Normal NF CN",
+        "fontDefaultScale": 1.03,
+        "fontFixed": "Maple Mono Normal NF CN",
+        "fontFixedScale": 1.03,
         "panelBackgroundOpacity": 0.9500000000000001,
         "panelsAttachedToBar": true,
         "scrollbarAlwaysVisible": false,
@@ -662,7 +659,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "~/Pictures/Wallpapers",
+        "directory": "/home/ferret/Pictures/Wallpapers/hanakowallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
@@ -696,7 +693,7 @@
         "useOriginalImages": true,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "single",
+        "viewMode": "recursive",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",

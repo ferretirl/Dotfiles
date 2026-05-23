@@ -1,20 +1,18 @@
 shell-integration-features = no-cursor
 theme = noctalia
-# gtk-single-instance = true
-# working-directory = inherit
-# Font
-font-family = MesloLGS Nerd Font Mono 
+
+font-family = Maple Mono Normal NF CN
 font-size = 12
 
-# Cursor
-cursor-style = bar
+cursor-style = bar 
+cursor-style-blink = false
 
-# Padding
- window-padding-x = 10
- window-padding-y = 10
+ window-padding-x = 5
+ window-padding-y = 5
 
-# No close confirmation
 confirm-close-surface = false
 
-# Shell
-command = fish
+shell-integration = fish
+
+link-url = true
+image-storage-limit = 320000000
