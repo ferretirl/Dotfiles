@@ -12,10 +12,10 @@ hl.config({
 		gaps_in = 10,
 		gaps_out = 20,
 		border_size = 2,
-		col = {
-			active_border = { colors = { "rgba(ebbcbaff)" } },
-			inactive_border = "rgba(00000000)",
-		},
+		-- col = {
+		-- 	active_border = { colors = { "rgba(ebbcbaff)" } },
+		-- 	inactive_border = "rgba(00000000)",
+		-- },
 		allow_tearing = false,
 		layout = "dwindle",
 	},
