@@ -29,8 +29,6 @@ end
 local floatClasses = {
 	"blueberry%.py",
 	"guifetch",
-	"pavucontrol",
-	"org%.pulseaudio%.pavucontrol",
 	"nm-connection-editor",
 	".*plasmawindowed.*",
 	"kcm_.*",
@@ -38,6 +36,7 @@ local floatClasses = {
 	"org%.freedesktop%.impl%.portal%.desktop%.kde",
 	"xdg-desktop-portal-gtk",
 	"steam_app_default",
+	"org.pulseaudio.pavucontrol",
 }
 for _, c in ipairs(floatClasses) do
 	hl.window_rule({ match = { class = c }, float = true })

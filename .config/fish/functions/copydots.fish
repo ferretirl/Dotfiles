@@ -34,14 +34,20 @@ function copydots
     cp -r ~/.config/nvim ~/Dotfiles/.config/
 
     echo "  → Thunar custom actions"
-    cp ~/.config/Thunar/uca.xml ~/Dotfiles/.config/Thunar/
+    rm -rf ~/Dotfiles/.config/Thunar/uca.xml
+    cp -r ~/.config/Thunar/uca.xml ~/Dotfiles/.config/Thunar/
 
     echo "  → mimeapps.list"
+    rm -rf ~/Dotfiles/.config/mimeapps.list
     cp ~/.config/mimeapps.list ~/Dotfiles/.config/
 
     echo "  → yazi"
     rm -rf ~/Dotfiles/.config/yazi/
     cp -r ~/.config/yazi/ ~/Dotfiles/.config/
+
+    echo "  → starship"
+    rm -rf ~/Dotfiles/.config/starship.toml
+    cp ~/.config/starship.toml ~/Dotfiles/.config/
 
     echo "Done!"
 end

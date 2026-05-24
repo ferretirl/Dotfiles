@@ -22,3 +22,4 @@ if status is-interactive
         alias ls 'eza --icons -a'
     end
 end
+starship init fish | source

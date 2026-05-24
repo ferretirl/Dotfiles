@@ -659,7 +659,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/ferret/Pictures/Wallpapers/hanakowallpapers",
+        "directory": "/home/ferret/Pictures/",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
@@ -693,7 +693,7 @@
         "useOriginalImages": true,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "recursive",
+        "viewMode": "browse",
         "wallhavenApiKey": "",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
