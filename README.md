@@ -8,6 +8,6 @@ Terminal: ghostty
 
 Shell: fish
 
-Prompt: tide
+Prompt: starship 
 
 Editor: neovim
