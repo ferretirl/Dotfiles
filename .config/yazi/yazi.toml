@@ -18,14 +18,14 @@ scrolloff      = 5
 mouse_events   = [ "click", "scroll", "drag" ]
 
 [preview]
-wrap            = "no"
+wrap            = "yes"
 tab_size        = 2
-max_width       = 600
-max_height      = 900
+max_width       = 1920 
+max_height      = 1080
 cache_dir       = ""
-image_delay     = 30
+image_delay     = 0
 image_filter    = "triangle"
-image_quality   = 75
+image_quality   = 90
 ueberzug_scale  = 1
 ueberzug_offset = [ 0, 0, 0, 0 ]
 
