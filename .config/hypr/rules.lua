@@ -97,6 +97,11 @@ hl.window_rule({
 	no_focus = true,
 })
 
+hl.window_rule({
+	name = "focusonclick",
+	match = { class = "brave-origin-beta" },
+})
+
 -- Fuckass Random Maximizing fix
 hl.window_rule({
 	name = "suppress-maximize-events",

@@ -15,41 +15,38 @@
   "modules": [
     { "type": "break" 
     },
-    { "type": "break" 
-    },
-    { "type": "break" 
-    },
-    { "type": "break" 
-    },
-    { "type": "break" 
-    },
     {
       "type": "custom",
       "outputColor": "#F8A5B5",
-      "format": "     ┌{$1}──────────{$1}┐"
+      "format": "     ┌{$1}──────────────────────────────{$1}┐"
     },
     {
       "type": "title",
       "outputColor": "#FFD3E4",
-      "format": "┌───{$1} {user-name}@{host-name} {$1}───┐"
+      "format": "┌─────────────{$1} {user-name}@{host-name} {$1}─────────────┐"
     },
     "os",
     "kernel",
     "wm",
+    "packages",
+    "break",
     "memory",
     "gpu",
+    "disk",
+    "break",
     "terminal",
+    "terminalfont",
     "shell",
     "uptime",
     {
       "type": "custom",
       "outputColor": "#FFD3E4",
-      "format": "└{$1}────────────────────{$1}┘"
+      "format": "└{$1}────────────────────────────────────────{$1}┘"
     },
     {
       "type": "custom",
       "outputColor": "#F8A5B5",
-      "format": "     └{$1}──────────{$1}┘"
+      "format": "     └{$1}──────────────────────────────{$1}┘"
     }
   ],
   "display": {
