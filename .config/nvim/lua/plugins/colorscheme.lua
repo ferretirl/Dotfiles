@@ -6,8 +6,10 @@ return {
       auto_integrations = true,
       color_overrides = {
         mocha = {
-          blue = "#b4befe",
-          sapphire = "#b4befe",
+          blue = "#f5c2e7",
+          sapphire = "#f5c2e7",
+          lavender = "#b4befe",
+          mauve = "#cba6f7",
         },
       },
     },

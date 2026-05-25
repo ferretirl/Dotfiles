@@ -2,9 +2,9 @@
 
 local primary = "rgb(f5c2e7)"
 local surface = "rgba(1e1e2ebf)"
-local secondary = "rgb(cba6f7)"
+local secondary = "rgb(f5e0dc)"
 local error_color = "rgb(f38ba8)"
-local tertiary = "rgb(f2a8d7)"
+local tertiary = "rgb(cba6f7)"
 local surface_lowest = "rgb(212232)"
 
 hl.config({

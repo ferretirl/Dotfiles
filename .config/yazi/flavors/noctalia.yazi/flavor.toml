@@ -8,15 +8,15 @@ find_keyword = { fg = "#f38ba8", bold = true, italic = true, underline = true }
 find_position = { fg = "#f38ba8", bold = true, italic = true }
 
 # Marker
-marker_copied = { fg = "#db0d90", bg = "#db0d90" }
-marker_cut = { fg = "#db0d90", bg = "#db0d90" }
+marker_copied = { fg = "#6b02e9", bg = "#6b02e9" }
+marker_cut = { fg = "#6b02e9", bg = "#6b02e9" }
 marker_marked = { fg = "#f38ba8", bg = "#f38ba8" }
-marker_selected = { fg = "#f2a8d7", bg = "#f2a8d7" }
+marker_selected = { fg = "#cba6f7", bg = "#cba6f7" }
 
 # Count
-count_copied = { fg = "#fef9fc", bg = "#db0d90" }
-count_cut = { fg = "#fef9fc", bg = "#db0d90" }
-count_selected = { fg = "#11111b", bg = "#f2a8d7" }
+count_copied = { fg = "#e4d0fb", bg = "#6b02e9" }
+count_cut = { fg = "#e4d0fb", bg = "#6b02e9" }
+count_selected = { fg = "#11111b", bg = "#cba6f7" }
 
 # Border
 border_style  = { fg = "#f5c2e7" }
@@ -37,10 +37,10 @@ progress_normal = { fg = "#f5c2e7", bg = "#1e1e2e" }
 progress_error = { fg = "#f38ba8", bg = "#1e1e2e" }
 
 # Permissions
-perm_type = { fg = "#cba6f7" }
-perm_write = { fg = "#f2a8d7" }
+perm_type = { fg = "#f5e0dc" }
+perm_write = { fg = "#cba6f7" }
 perm_exec = { fg = "#f38ba8" }
-perm_read = { fg = "#db0d90" }
+perm_read = { fg = "#6b02e9" }
 perm_sep = { fg = "#ef16b3" }
 
 # : ]]]
@@ -51,13 +51,13 @@ perm_sep = { fg = "#ef16b3" }
 [mode]
 
 normal_main = { bg = "#f5c2e7", fg = "#11111b", bold = true }
-normal_alt  = { bg = "#313244", fg = "#cba6f7" }
+normal_alt  = { bg = "#313244", fg = "#f2cdcd" }
 
-select_main = { bg = "#cba6f7", fg = "#11111b", bold = true }
-select_alt  = { bg = "#313244", fg = "#cba6f7" }
+select_main = { bg = "#f5e0dc", fg = "#11111b", bold = true }
+select_alt  = { bg = "#313244", fg = "#f2cdcd" }
 
-unset_main = { bg = "#f2a8d7", fg = "#11111b", bold = true }
-unset_alt  = { bg = "#313244", fg = "#cba6f7" }
+unset_main = { bg = "#cba6f7", fg = "#11111b", bold = true }
+unset_alt  = { bg = "#313244", fg = "#f2cdcd" }
 
 # : ]]]
 
@@ -77,7 +77,7 @@ selected = { reversed = true }
 
 [tabs]
 active = { fg = "#1e1e2e", bold = true, bg = "#f5c2e7" }
-inactive = { fg = "#cba6f7", bg = "#1e1e2e" }
+inactive = { fg = "#f5e0dc", bg = "#1e1e2e" }
 sep_inner = { open = "", close = "" }
 
 # : ]]]
@@ -96,7 +96,7 @@ border = { fg = "#f5c2e7", bg = "#11111b" }
 [tasks]
 border = { fg = "#f5c2e7" }
 title = {}
-hovered = { fg = "#db0d90", underline = true }
+hovered = { fg = "#6b02e9", underline = true }
 
 # : ]]]
 
@@ -131,7 +131,7 @@ tbl_cell = { fg = "#cdd6f4", bg = "#1e1e2e" }
 on = { fg = "#cdd6f4" }
 run = { fg = "#cdd6f4" }
 hovered = { reversed = true, bold = true }
-footer = { fg = "#11111b", bg = "#cba6f7" }
+footer = { fg = "#11111b", bg = "#f5e0dc" }
 
 # : ]]]
 
@@ -139,7 +139,7 @@ footer = { fg = "#11111b", bg = "#cba6f7" }
 # : Notify [[[
 
 [notify]
-title_info = { fg = "#f2a8d7" }
+title_info = { fg = "#cba6f7" }
 title_warn = { fg = "#f5c2e7" }
 title_error = { fg = "#f38ba8" }
 
