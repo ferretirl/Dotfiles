@@ -9,10 +9,12 @@
     "padding": {
       "top": 1,
       "left": 5,
-      "right": 4
+      "right": 3
     }
   },
   "modules": [
+    { "type": "break" 
+    },
     { "type": "break" 
     },
     {
