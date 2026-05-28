@@ -21,8 +21,8 @@ local floatTitles = {
 	"^[Pp]icture[-%s]?[Ii]n[-%s]?[Pp]icture",
 	".*is sharing (a window|your screen).*",
 }
-for _, t in ipairs(floatTitles) do
-	hl.window_rule({ match = { title = t }, float = true })
+for _, floatd in ipairs(floatTitles) do
+	hl.window_rule({ match = { title = floatd }, float = true })
 end
 
 -- Floating apps
@@ -37,9 +37,10 @@ local floatClasses = {
 	"xdg-desktop-portal-gtk",
 	"steam_app_default",
 	"org.pulseaudio.pavucontrol",
+	"moe%.launcher%.an-anime-game-launcher",
 }
-for _, c in ipairs(floatClasses) do
-	hl.window_rule({ match = { class = c }, float = true })
+for _, float in ipairs(floatClasses) do
+	hl.window_rule({ match = { class = float }, float = true })
 end
 
 -- PiP - pin to all workspaces
@@ -49,13 +50,6 @@ hl.window_rule({
 	pin = true,
 })
 
--- Anime game launcher
-hl.window_rule({
-	match = { class = "moe%.launcher%.an-anime-game-launcher" },
-	float = true,
-	size = "1400 800",
-})
-
 -- Roblox (Sober)
 hl.window_rule({
 	match = { class = "org%.vinegarhq%.Sober", title = ".*Join.*" },
@@ -63,14 +57,14 @@ hl.window_rule({
 	size = "1600 900",
 })
 
--- equibop scratchpad
+-- Equibop scratchpad
 hl.window_rule({
 	match = { class = "equibop" },
 	float = false,
 	workspace = "special:equibop",
 })
 
--- feishin scratchpad + opacity
+-- Feishin scratchpad + opacity
 hl.window_rule({
 	match = { class = "feishin" },
 	float = false,
@@ -97,9 +91,16 @@ hl.window_rule({
 	no_focus = true,
 })
 
--- Fuckass Random Maximizing fix
+-- Fuckass random maximizing fix + no idling apps
 hl.window_rule({
 	name = "suppress-maximize-events",
 	match = { class = ".*" },
 	suppress_event = "maximize",
+	idle_inhibit = "always",
+})
+-- Focus browser when clicking on links
+hl.window_rule({
+	name = "brave-focus",
+	match = { class = "brave-origin-beta" },
+	focus_on_activate = true,
 })
