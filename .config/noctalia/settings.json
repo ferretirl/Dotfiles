@@ -211,7 +211,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Catppuccin Pink",
+        "predefinedScheme": "Catppuccin Mauve",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -324,7 +324,7 @@
         "animationDisabled": false,
         "animationSpeed": 1,
         "autoStartAuth": false,
-        "avatarImage": "/home/ferret/Pictures/hanako/hah.png",
+        "avatarImage": "/home/ferret/Pictures/hina/Sorasaki.Hina.full.3921559t.png",
         "boxRadiusRatio": 1,
         "clockFormat": "hh\\nmm",
         "clockStyle": "custom",
@@ -655,7 +655,7 @@
     },
     "wallpaper": {
         "automationEnabled": true,
-        "directory": "/home/ferret/Pictures/autowallpapers",
+        "directory": "/home/ferret/Pictures/bg",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
@@ -675,7 +675,7 @@
             }
         ],
         "fillColor": "#ff0000",
-        "fillMode": "fit",
+        "fillMode": "crop",
         "hideWallpaperFilenames": false,
         "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
