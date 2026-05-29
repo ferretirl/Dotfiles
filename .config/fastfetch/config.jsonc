@@ -21,12 +21,12 @@
     },
     {
       "type": "custom",
-      "outputColor": "#cba6f7",
+      "outputColor": "#ca9ee6",
       "format": "     ┌{$1}──────────────────────────────{$1}┐"
     },
     {
       "type": "title",
-      "outputColor": "#ca9ee6",
+      "outputColor": "#c4a7e7",
       "format": "┌─────────────{$1} {user-name}@{host-name} {$1}─────────────┐"
     },
     "os",
@@ -44,12 +44,12 @@
     "uptime",
     {
       "type": "custom",
-      "outputColor": "#ca9ee6",
+      "outputColor": "#c4a7e7",
       "format": "└{$1}────────────────────────────────────────{$1}┘"
     },
     {
       "type": "custom",
-      "outputColor": "#cba6f7",
+      "outputColor": "#ca9ee6",
       "format": "     └{$1}──────────────────────────────{$1}┘"
     }
   ],
@@ -67,10 +67,10 @@
     "hideCursor": false,
     "separator": " » ",
     "color": {
-      "keys": "#cba6f7",
-      "title": "#cba6f7",
+      "keys": "#c4a7e7",
+      "title": "#c4a7e7",
       "output": "#FAFAFA",
-      "separator": "#ca9ee6"
+      "separator": "#907aa9"
       }
     }
 }

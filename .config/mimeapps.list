@@ -1,7 +1,7 @@
 [Added Associations]
 application/gzip=org.kde.ark.desktop;
 application/json=nvim.desktop;dev.zed.Zed.desktop;dev.zed.Zed.desktop;
-application/pdf=brave-origin-beta.desktop;
+application/pdf=helium.desktop;brave-origin-beta.desktop;
 application/toml=nvim.desktop;vim.desktop;
 application/vnd.ms-cab-compressed=org.kde.ark.desktop;
 application/vnd.rar=org.kde.ark.desktop;
@@ -249,11 +249,13 @@ video/x-ogm=mpv.desktop;
 video/x-ogm+ogg=mpv.desktop;
 video/x-theora=mpv.desktop;
 video/x-theora+ogg=mpv.desktop;
+x-scheme-handler/http=helium.desktop;
+x-scheme-handler/https=helium.desktop;
 
 [Default Applications]
 application/gzip=org.kde.ark.desktop;
 application/json=nvim.desktop;
-application/pdf=brave-origin-beta.desktop;
+application/pdf=helium.desktop;
 application/toml=nvim.desktop;
 application/vnd.ms-cab-compressed=org.kde.ark.desktop;
 application/vnd.rar=org.kde.ark.desktop;
@@ -501,6 +503,8 @@ video/x-ogm=mpv.desktop;
 video/x-ogm+ogg=mpv.desktop;
 video/x-theora=mpv.desktop;
 video/x-theora+ogg=mpv.desktop;
+x-scheme-handler/http=helium.desktop;
+x-scheme-handler/https=helium.desktop;
 
 [Removed Associations]
 application/toml=codium-2.desktop;codium.desktop;

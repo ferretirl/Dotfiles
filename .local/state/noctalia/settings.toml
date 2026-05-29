@@ -1,0 +1,73 @@
+[bar]
+order = [ "uwu" ]
+
+    [bar.uwu]
+    border = "surface"
+    end = [ "tray", "notifications", "bluetooth", "media" ]
+    font_weight = 700
+    margin_edge = 0.0
+    margin_ends = 0.0
+    padding = 10
+    radius = 0
+    scale = 1.2000000104308128
+    start = [ "workspaces" ]
+    thickness = 25
+
+[desktop_widgets]
+enabled = false
+
+[notification]
+offset_x = 10.0
+offset_y = 10.0
+scale = 0.7500000037252903
+
+[osd]
+scale = 0.7500000037252903
+
+[shell]
+avatar_path = "/home/ferret/Pictures/hina/c4fe544f8dc197413f335e727d561962.webp"
+corner_radius_scale = 0.5000000074505806
+font_family = "RecMonoLinear Nerd Font Mono"
+lang = "en"
+settings_show_advanced = true
+ui_scale = 1.1000000089406967
+
+[theme]
+builtin = "Rosé Pine"
+community_palette = "Kanagawa Paper"
+wallpaper_scheme = "vibrant"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "ghostty", "hyprland", "qt", "starship" ]
+    community_ids = [ "yazi" ]
+
+[wallpaper]
+directory = "/home/ferret/Pictures/bg"
+transition = [ "fade" ]
+
+    [wallpaper.default]
+    path = "/home/ferret/Pictures/bg/wallhaven-vq3lol.png"
+
+    [wallpaper.last]
+    path = "/home/ferret/Pictures/bg/wallhaven-vq3lol.png"
+
+    [wallpaper.monitors.DP-1]
+    path = "/home/ferret/Pictures/bg/wallhaven-vq3lol.png"
+
+    [wallpaper.monitors.DP-2]
+    path = "/home/ferret/Pictures/bg/wallhaven-vq3lol.png"
+
+[weather]
+address = "Uhersky Brod, Czech Republic"
+
+[widget.clock]
+format = "{:%A} {:%Y-%m-%d} {:%H:%M}"
+
+[widget.media]
+max_length = 450.0
+
+[widget.workspaces]
+empty_color = "on_tertiary"
+focused_color = "error"
+minimal = true
+occupied_color = "on_tertiary"

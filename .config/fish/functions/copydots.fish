@@ -14,8 +14,8 @@ function copydots
     cp -r ~/.config/fish ~/Dotfiles/.config/
 
     echo "  → noctalia"
-    rm -rf ~/Dotfiles/.config/noctalia
-    cp -r ~/.config/noctalia ~/Dotfiles/.config/
+    rm -rf ~/Dotfiles/.local/state/noctalia/settings.toml
+    cp -r ~/.local/state/noctalia/settings.toml ~/Dotfiles/.local/state/noctalia/
 
     echo "  → pipewire"
     rm -rf ~/Dotfiles/.config/pipewire

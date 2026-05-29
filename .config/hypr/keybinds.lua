@@ -6,7 +6,7 @@
 -- ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═════╝ ╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝╚═╝  ╚═══╝ ╚═════╝
 -------------------------------------------------------------------------------
 
-local noctalia = "qs -c noctalia-shell ipc call"
+local noctalia = "noctalia msg"
 
 -- Focus movement
 hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
@@ -61,7 +61,7 @@ hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- Apps
 hl.bind("SUPER + T", hl.dsp.exec_cmd("ghostty +new-window"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd("ghostty -e yazi"))
-hl.bind("SUPER + W", hl.dsp.exec_cmd("brave-origin-beta"))
+hl.bind("SUPER + W", hl.dsp.exec_cmd("helium-browser"))
 hl.bind("SUPER + C", hl.dsp.exec_cmd("ghostty -e nvim"))
 hl.bind("SUPER + X", hl.dsp.exec_cmd("kate"))
 hl.bind("CTRL + SUPER + V", hl.dsp.exec_cmd("pavucontrol-qt"))
@@ -75,7 +75,7 @@ hl.bind("SUPER + D", hl.dsp.exec_cmd("equibop", { float = false, move = { 0, 0 }
 hl.bind("SUPER + M", hl.dsp.workspace.toggle_special("feishin"))
 hl.bind("SUPER + M", hl.dsp.exec_cmd("feishin", { float = false, move = { 0, 0 } }))
 -- Screenshot
-hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region --freeze"))
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z -s"))
 
 -- Color picker
 hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
@@ -84,10 +84,10 @@ hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind("SUPER + SHIFT + E", hl.dsp.exit())
 
 -- Noctalia IPC
-hl.bind("SUPER + V", hl.dsp.exec_cmd(noctalia .. " launcher clipboard"))
-hl.bind("SUPER + SPACE", hl.dsp.exec_cmd(noctalia .. " launcher toggle"))
+hl.bind("SUPER + V", hl.dsp.exec_cmd(noctalia .. " panel-toggle launcher clipboard"))
+hl.bind("SUPER + SPACE", hl.dsp.exec_cmd(noctalia .. " panel-toggle launcher"))
 hl.bind("SUPER + O", hl.dsp.exec_cmd(noctalia .. " bar toggle"))
-hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 qs && sleep 1 && qs -c noctalia-shell"))
+hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 noctalia && noctalia"))
 
 -- Scripts
 hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("bash ~/.config/hypr/scripts/afk-toggle.sh"))

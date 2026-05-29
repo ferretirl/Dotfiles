@@ -2,11 +2,11 @@
 
 Window Manager: Hyprland
 
-Quickshell: noctalia
-
 Terminal: ghostty
 
 Shell: fish
+
+The other definition of shell: noctalia
 
 Prompt: starship 
 
