@@ -84,9 +84,9 @@ hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
 hl.bind("SUPER + SHIFT + E", hl.dsp.exit())
 
 -- Noctalia IPC
-hl.bind("SUPER + V", hl.dsp.exec_cmd(noctalia .. " panel-toggle launcher clipboard"))
+hl.bind("SUPER + V", hl.dsp.exec_cmd(noctalia .. " panel-toggle clipboard"))
 hl.bind("SUPER + SPACE", hl.dsp.exec_cmd(noctalia .. " panel-toggle launcher"))
-hl.bind("SUPER + O", hl.dsp.exec_cmd(noctalia .. " bar toggle"))
+hl.bind("SUPER + O", hl.dsp.exec_cmd(noctalia .. " bar-toggle"))
 hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 noctalia && noctalia"))
 
 -- Scripts

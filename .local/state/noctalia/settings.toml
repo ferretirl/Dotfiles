@@ -16,6 +16,12 @@ order = [ "uwu" ]
 [desktop_widgets]
 enabled = false
 
+[keybinds]
+down = [ "Ctrl+j" ]
+left = [ "Ctrl+h" ]
+right = [ "Ctrl+l" ]
+up = [ "Ctrl+k" ]
+
 [notification]
 offset_x = 10.0
 offset_y = 10.0
@@ -26,6 +32,7 @@ scale = 0.7500000037252903
 
 [shell]
 avatar_path = "/home/ferret/Pictures/hina/c4fe544f8dc197413f335e727d561962.webp"
+clipboard_history_max_entries = 100.0
 corner_radius_scale = 0.5000000074505806
 font_family = "RecMonoLinear Nerd Font Mono"
 lang = "en"
