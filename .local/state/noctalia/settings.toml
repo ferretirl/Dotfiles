@@ -3,15 +3,15 @@ order = [ "uwu" ]
 
     [bar.uwu]
     border = "surface"
-    end = [ "tray", "notifications", "bluetooth", "media" ]
-    font_weight = 700
-    margin_edge = 0.0
-    margin_ends = 0.0
-    padding = 10
-    radius = 0
-    scale = 1.2000000104308128
+    end = [ "tray", "notifications", "media" ]
+    font_weight = 400
+    margin_edge = 10.0
+    margin_ends = 100.0
+    padding = 20
+    radius = 5
+    scale = 1.2500000111758709
     start = [ "workspaces" ]
-    thickness = 25
+    thickness = 30
 
 [desktop_widgets]
 enabled = false
@@ -34,10 +34,16 @@ scale = 0.7500000037252903
 avatar_path = "/home/ferret/Pictures/hina/c4fe544f8dc197413f335e727d561962.webp"
 clipboard_history_max_entries = 100.0
 corner_radius_scale = 0.5000000074505806
-font_family = "RecMonoLinear Nerd Font Mono"
+font_family = "DepartureMono Nerd Font Mono"
 lang = "en"
-settings_show_advanced = true
+polkit_agent = true
+settings_show_advanced = false
+show_location = false
 ui_scale = 1.1000000089406967
+
+    [shell.panel]
+    launcher_categories = false
+    launcher_placement = "attached"
 
 [theme]
 builtin = "Rosé Pine"
@@ -66,9 +72,6 @@ transition = [ "fade" ]
 
 [weather]
 address = "Uhersky Brod, Czech Republic"
-
-[widget.clock]
-format = "{:%A} {:%Y-%m-%d} {:%H:%M}"
 
 [widget.media]
 max_length = 450.0

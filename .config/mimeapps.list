@@ -322,7 +322,7 @@ text/css=nvim.desktop;
 text/csv=nvim.desktop;
 text/csv-schema=nvim.desktop;
 text/enriched=nvim.desktop;
-text/html=nvim.desktop;
+text/html=helium.desktop
 text/htmlh=nvim.desktop;
 text/javascript=nvim.desktop;
 text/jscript.encode=nvim.desktop;
@@ -503,8 +503,10 @@ video/x-ogm=mpv.desktop;
 video/x-ogm+ogg=mpv.desktop;
 video/x-theora=mpv.desktop;
 video/x-theora+ogg=mpv.desktop;
-x-scheme-handler/http=helium.desktop;
-x-scheme-handler/https=helium.desktop;
+x-scheme-handler/http=helium.desktop
+x-scheme-handler/https=helium.desktop
+x-scheme-handler/about=helium.desktop
+x-scheme-handler/unknown=helium.desktop
 
 [Removed Associations]
 application/toml=codium-2.desktop;codium.desktop;
