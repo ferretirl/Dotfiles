@@ -43,6 +43,29 @@ for _, float in ipairs(floatClasses) do
 	hl.window_rule({ match = { class = float }, float = true })
 end
 
+-- Focus on activate app list
+local focusClasses = {
+	"org.gnome.Nautilus",
+	"helium",
+	"brave-origin-beta",
+	"dev.noctalia.Noctalia.Settings",
+	"Bitwarden",
+}
+for _, focus in ipairs(focusClasses) do
+	hl.window_rule({ match = { class = focus }, focus_on_activate = true })
+end
+
+-- Opacity for apps
+local opacityClasses = {
+	"com.mitchellh.ghostty",
+	"feishin",
+	"Thunar",
+	"dev.noctalia.Noctalia.Settings",
+}
+for _, opacity in ipairs(opacityClasses) do
+	hl.window_rule({ match = { class = opacity }, opacity = 0.96 })
+end
+
 -- PiP - pin to all workspaces
 hl.window_rule({
 	match = { title = "^[Pp]icture[-%s]?[Ii]n[-%s]?[Pp]icture" },
@@ -69,7 +92,6 @@ hl.window_rule({
 	match = { class = "feishin" },
 	float = false,
 	workspace = "special:feishin",
-	opacity = 0.95,
 })
 
 -- Steam games tearing
@@ -77,12 +99,6 @@ hl.window_rule({
 	match = { class = "steam_app_.*" },
 	immediate = true,
 })
-
--- Opacity rules
-hl.window_rule({ match = { class = "^thunar$" }, opacity = 0.95 })
-hl.window_rule({ match = { class = "^com.mitchellh.ghostty$" }, opacity = 0.95 })
--- hl.window_rule({ match = { class = "^brave-origin-beta$" }, opacity = 0.95 })
-hl.window_rule({ match = { title = "*.YouTube - Brave Origin" }, opacity = 1.0 })
 
 -- Fix XWayland drags
 hl.window_rule({

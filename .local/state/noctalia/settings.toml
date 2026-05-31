@@ -2,16 +2,17 @@
 order = [ "uwu" ]
 
     [bar.uwu]
+    background_opacity = 0.9499999787658453
     border = "surface"
     end = [ "tray", "notifications", "media" ]
     font_weight = 400
     margin_edge = 10.0
     margin_ends = 100.0
-    padding = 20
-    radius = 5
+    padding = 15
+    radius = 20
     scale = 1.2500000111758709
     start = [ "workspaces" ]
-    thickness = 30
+    thickness = 40
 
 [desktop_widgets]
 enabled = false
@@ -32,9 +33,11 @@ scale = 0.7500000037252903
 
 [shell]
 avatar_path = "/home/ferret/Pictures/hina/c4fe544f8dc197413f335e727d561962.webp"
+clipboard_auto_paste = "off"
 clipboard_history_max_entries = 100.0
 corner_radius_scale = 0.5000000074505806
-font_family = "DepartureMono Nerd Font Mono"
+date_format = "{:%A}, {:/%d/%m/%Y}"
+font_family = "RecMonoCasual Nerd Font Mono"
 lang = "en"
 polkit_agent = true
 settings_show_advanced = false
@@ -47,12 +50,13 @@ ui_scale = 1.1000000089406967
 
 [theme]
 builtin = "Rosé Pine"
-community_palette = "Kanagawa Paper"
-wallpaper_scheme = "vibrant"
+community_palette = "Monochrome"
+custom_palette = "monochrome"
+source = "custom"
 
     [theme.templates]
     builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "ghostty", "hyprland", "qt", "starship" ]
-    community_ids = [ "yazi" ]
+    community_ids = [ "yazi", "discord" ]
 
 [wallpaper]
 directory = "/home/ferret/Pictures/bg"
@@ -73,11 +77,14 @@ transition = [ "fade" ]
 [weather]
 address = "Uhersky Brod, Czech Republic"
 
+[widget.clock]
+format = "{:%H:%M} {:/%d/%m/%Y}"
+
 [widget.media]
 max_length = 450.0
+title_scroll = "on_hover"
 
 [widget.workspaces]
-empty_color = "on_tertiary"
+empty_color = "tertiary"
 focused_color = "error"
 minimal = true
-occupied_color = "on_tertiary"

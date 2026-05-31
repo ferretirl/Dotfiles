@@ -11,37 +11,35 @@ hl.config({
 	general = {
 		gaps_in = 10,
 		gaps_out = 40,
-		border_size = 2,
 		col = {
-			-- active_border = { colors = { "rgba(f5c2e7ff)" } },
-			inactive_border = "rgba(00000000)",
+			active_border = { colors = { "rgba(ffffffee)" } },
+			inactive_border = { colors = { "rgba(000000aa)" } },
 		},
+		border_size = 1,
 		allow_tearing = false,
 		layout = "dwindle",
 	},
 
 	decoration = {
-		rounding = 5,
+		rounding = 11,
 		rounding_power = 2,
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
 
 		shadow = {
 			enabled = true,
-			range = 4,
-			render_power = 3,
-			color = 0xee1a1a1a,
+			range = 1,
+			render_power = 1,
+			color = 0xffffffee,
+			color_inactive = 0x000000ee,
 		},
 
 		blur = {
 			enabled = true,
 			size = 3,
-			passes = 2,
-			noise = 0.02,
-			contrast = 1.0,
-			brightness = 1.0,
-			vibrancy = 0.0,
+			passes = 1,
 			xray = false,
+			vibrancy = 0.1696,
 		},
 	},
 })

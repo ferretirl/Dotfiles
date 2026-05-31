@@ -1,4 +1,3 @@
-fish_vi_key_bindings
 set -gx SUDO_EDITOR nvim
 set -gx EDITOR nvim
 set -gx VISUAL nvim
