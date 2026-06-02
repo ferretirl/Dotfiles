@@ -36,20 +36,22 @@ local floatClasses = {
 	"org%.freedesktop%.impl%.portal%.desktop%.kde",
 	"xdg-desktop-portal-gtk",
 	"steam_app_default",
-	"org.pulseaudio.pavucontrol",
-	"moe%.launcher%.an-anime-game-launcher",
+	"pavucontrol-qt",
+	"moe.launcher.an-anime-game-launcher",
 }
 for _, float in ipairs(floatClasses) do
-	hl.window_rule({ match = { class = float }, float = true })
+	hl.window_rule({ match = { class = float }, float = true, center = true })
 end
 
 -- Focus on activate app list
 local focusClasses = {
 	"org.gnome.Nautilus",
-	"helium",
-	"brave-origin-beta",
+	"helium.*",
+	"brave-origin-.*",
 	"dev.noctalia.Noctalia.Settings",
-	"Bitwarden",
+	"[bB]itwarden",
+	"[fF]augus-.*",
+	"org.prismlauncher.PrismLauncher",
 }
 for _, focus in ipairs(focusClasses) do
 	hl.window_rule({ match = { class = focus }, focus_on_activate = true })
@@ -57,9 +59,9 @@ end
 
 -- Opacity for apps
 local opacityClasses = {
-	"com.mitchellh.ghostty",
+	-- "com.mitchellh.ghostty",
 	"feishin",
-	"Thunar",
+	"^[tT]hunar$",
 	"dev.noctalia.Noctalia.Settings",
 }
 for _, opacity in ipairs(opacityClasses) do

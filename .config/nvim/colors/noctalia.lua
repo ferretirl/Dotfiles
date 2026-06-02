@@ -41,11 +41,11 @@ local c = {
 local h = vim.api.nvim_set_hl
 
 -- UI (monochrome)
-h(0, "Normal", { fg = c.fg, bg = c.bg })
-h(0, "NormalFloat", { fg = c.fg, bg = c.bg_variant })
+h(0, "Normal", { fg = c.fg, bg = "none" })
+h(0, "NormalFloat", { fg = c.fg, bg = "none" })
 h(0, "FloatBorder", { fg = c.outline, bg = c.bg_variant })
 h(0, "FloatTitle", { fg = c.foam, bg = c.bg_variant, bold = true })
-h(0, "NormalNC", { fg = c.fg_dim, bg = c.bg })
+h(0, "NormalNC", { fg = c.fg_dim, bg = "none" })
 h(0, "Cursor", { fg = c.bg, bg = c.fg })
 h(0, "CursorLine", { bg = c.bg_variant })
 h(0, "CursorLineNr", { fg = c.fg, bold = true })

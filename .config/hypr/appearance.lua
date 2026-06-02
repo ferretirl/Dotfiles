@@ -12,7 +12,7 @@ hl.config({
 		gaps_in = 10,
 		gaps_out = 40,
 		col = {
-			active_border = { colors = { "rgba(ffffffee)" } },
+			active_border = { colors = { "rgba(f0f0f0ee)" } },
 			inactive_border = { colors = { "rgba(000000aa)" } },
 		},
 		border_size = 1,
@@ -30,7 +30,7 @@ hl.config({
 			enabled = true,
 			range = 1,
 			render_power = 1,
-			color = 0xffffffee,
+			color = 0xf0f0f0ee,
 			color_inactive = 0x000000ee,
 		},
 
