@@ -2,9 +2,10 @@
 order = [ "uwu" ]
 
     [bar.uwu]
-    background_opacity = 0.9499999787658453
-    border = "surface"
-    end = [ "tray", "notifications", "media" ]
+    background_opacity = 0.95999997854232788
+    border = "on_primary"
+    center = []
+    end = [ "clock", "tray", "notifications", "media" ]
     font_weight = 400
     margin_ends = 100
     padding = 15
@@ -12,6 +13,7 @@ order = [ "uwu" ]
     scale = 1.350000012665987
     start = [ "workspaces", "active_window" ]
     thickness = 40
+    widget_spacing = 10
 
 [desktop_widgets]
 enabled = false
@@ -83,11 +85,15 @@ address = "Uhersky Brod, Czech Republic"
 [widget.active_window]
 max_length = 450
 
+[widget.bongocat]
+script = "scripts/bongocat.lua"
+type = "scripted"
+
 [widget.clock]
 format = "{:%H:%M} {:/%d/%m/%Y}"
 
 [widget.media]
-max_length = 450.0
+max_length = 300
 title_scroll = "on_hover"
 
 [widget.workspaces]

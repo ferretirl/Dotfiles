@@ -15,7 +15,7 @@
   "display": {
     "separator": "  ",
     "constants": [
-      "──────"
+      "━━━━━━"
     ],
     "key": {
       "paddingLeft": 2
@@ -37,12 +37,12 @@
     {
       "type": "custom",
       "outputColor": "#f03d88",
-      "format": "     ┌{$1}───────────────{$1}┐"
+      "format": "     ┏{$1}━━━━━━━━━━━━━━{$1}┓"
     },
     {
       "type": "title",
       "outputColor": "#f562a8",
-      "format": "┌{$1}──── {user-name}@{host-name} ────{$1}┐"
+      "format": "┏{$1}━━━━ {user-name}@{host-name} ━━━━{$1}┓"
     },
     {
       "type": "os",
@@ -69,12 +69,12 @@
     {
       "type": "custom",
       "outputColor": "#f562a8",
-      "format": "└{$1}─────────────────────────{$1}┘"
+      "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
     },
     {
       "type": "title",
       "outputColor": "#f562a8",
-      "format": "┌{$1}──────── Storage ────────{$1}┐"
+      "format": "┏{$1}━━━━━━━━ Storage ━━━━━━━━{$1}┓"
     },
     {
       "type": "packages",
@@ -91,12 +91,12 @@
     {
       "type": "custom",
       "outputColor": "#f562a8",
-      "format": "└{$1}─────────────────────────{$1}┘"
+      "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
     },
     {
       "type": "title",
       "outputColor": "#f562a8",
-      "format": "┌{$1}──────── Display ────────{$1}┐"
+      "format": "┏{$1}━━━━━━━━ Display ━━━━━━━━{$1}┓"
     },
     {
       "type": "display",
@@ -107,12 +107,12 @@
     {
       "type": "custom",
       "outputColor": "#f562a8",
-      "format": "└{$1}─────────────────────────{$1}┘"
+      "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
     },
     {
       "type": "custom",
       "outputColor": "#f03d88",
-      "format": "     └{$1}───────────────{$1}┘"
+      "format": "     ┗{$1}━━━━━━━━━━━━━━━{$1}┛"
     },
     "break",
     "break"
