@@ -61,13 +61,10 @@ hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 -- Apps
 hl.bind("SUPER + T", hl.dsp.exec_cmd("ghostty +new-window"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd("ghostty -e yazi"))
-hl.bind("SUPER + W", hl.dsp.exec_cmd("helium-browser"))
+hl.bind("SUPER + W", hl.dsp.exec_cmd("brave-origin-nightly"))
 hl.bind("SUPER + C", hl.dsp.exec_cmd("ghostty -e nvim"))
-hl.bind("SUPER + X", hl.dsp.exec_cmd("kate"))
 hl.bind("CTRL + SUPER + V", hl.dsp.exec_cmd("pavucontrol-qt"))
-hl.bind("SUPER + I", hl.dsp.exec_cmd("env XDG_CURRENT_DESKTOP=gnome systemsettings"))
 hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("ghostty -e btop"))
-hl.bind("CTRL + SUPER + SHIFT + ALT + W", hl.dsp.exec_cmd("libreoffice"))
 
 -- Scratchpads
 hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("equibop"))
@@ -87,7 +84,7 @@ hl.bind("SUPER + SHIFT + E", hl.dsp.exit())
 hl.bind("SUPER + V", hl.dsp.exec_cmd(noctalia .. " panel-toggle clipboard"))
 hl.bind("SUPER + SPACE", hl.dsp.exec_cmd(noctalia .. " panel-toggle launcher"))
 hl.bind("SUPER + O", hl.dsp.exec_cmd(noctalia .. " bar-toggle"))
-hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 noctalia && noctalia"))
+hl.bind("CTRL + SUPER + T", hl.dsp.exec_cmd("killall -9 noctalia && sleep 1 && noctalia"))
 
 -- Scripts
 hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("bash ~/.config/hypr/scripts/afk-toggle.sh"))

@@ -12,34 +12,34 @@ hl.config({
 		gaps_in = 10,
 		gaps_out = 40,
 		col = {
-			active_border = { colors = { "rgba(f0f0f0ee)" } },
+			active_border = { colors = { "rgba(2276b7ff)" } },
 			inactive_border = { colors = { "rgba(000000aa)" } },
 		},
-		border_size = 1,
+		border_size = 2,
 		allow_tearing = false,
 		layout = "dwindle",
 	},
 
 	decoration = {
-		rounding = 11,
+		rounding = 2,
 		rounding_power = 2,
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
 
 		shadow = {
-			enabled = true,
+			enabled = false,
 			range = 1,
 			render_power = 1,
-			color = 0xf0f0f0ee,
+			color = 0xf03d88ee,
 			color_inactive = 0x000000ee,
 		},
 
 		blur = {
 			enabled = true,
-			size = 2,
+			size = 1,
 			passes = 3,
 			special = true,
-			vibrancy = 0.1696,
+			vibrancy = 0.1695,
 			xray = false,
 		},
 	},

@@ -2,129 +2,119 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "kitty",
-    "source": "/home/ferret/Pictures/hina/hina-swimsuit.png", 
-    "width": 30,
+    "source": "/home/ferret/.config/fastfetch/buros.png",
+    "width": 35,
     "recache": false,
     "preserveAspectRatio": true,
     "padding": {
-      "top": 1,
-      "left": 5,
-      "right": 5
+      "top": 0,
+      "left": 1,
+      "right": 3
     }
   },
   "display": {
-    "separator": " ",
-    "disableLinewrap": true
+    "separator": "  ",
+    "constants": [
+      "──────"
+    ],
+    "key": {
+      "paddingLeft": 2
+    },
+    "percent": {
+      "type": 9, // 1=number, 2=bar, 3=both, 9=colored number
+      "color": {
+        "green": "green",
+        "yellow": "yellow",
+        "red": "red"
+      }
+    }
   },
   "modules": [
-        {
-        "type": "break",
-        },
-        {
-        "type": "break",
-        },
-        {
-            "type": "custom",
-            "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
-
-        },
-        // {
-        //     "type": "cpu",
-        //     "key": "│ 󰻠 ",
-        //     "keyColor": "1"
-        // },
-        // {
-        //     "type": "gpu",
-        //     "key": "│  ",
-        //     "keyColor": "1"
-        // },
-        {
-            "type": "memory",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "disk",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "display",
-            "key": "│ 󰍹 ",
-            "keyColor": "1"
-        },
-        {
-            "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-        },
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
-        },
-        {
-            "type": "os",
-            "key": "│ 󰣇 ",
-            "keyColor": "1"
-        },
-        {
-            "type": "kernel",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "packages",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "shell",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "lm",
-            "key": "│ 󰍂 ",
-            "keyColor": "1"
-        },
-        {
-            "type": "wm",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "terminal",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-        },
-        "break",
-        {
-            "type": "custom",
-            "format": "\u001b[90m┌───────────────────Age|Uptime|Time──────────────────┐"
-        },
-        {
-            "type": "command",
-            "key": "│ 󱟰 ",
-            "keyColor": "1",
-            "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
-        },
-        {
-            "type": "uptime",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "datetime",
-            "key": "│  ",
-            "keyColor": "1"
-        },
-        {
-            "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────┘"
-        },
-    ]
+    "break",
+    "break",
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "outputColor": "#f03d88",
+      "format": "     ┌{$1}───────────────{$1}┐"
+    },
+    {
+      "type": "title",
+      "outputColor": "#f562a8",
+      "format": "┌{$1}──── {user-name}@{host-name} ────{$1}┐"
+    },
+    {
+      "type": "os",
+      "key": "os  ",
+      "keyColor": "33"
+    },
+    {
+      "type": "kernel",
+      "key": "krnl",
+      "keyColor": "33"
+    },
+    {
+      "type": "wm",
+      "key": "wm",
+      "format": "  {pretty-name} {version}",
+      "keyColor": "33"
+    },
+    {
+      "type": "memory",
+      "key": "ram",
+      "format": " {used} / {total} ({percentage})",
+      "keyColor": "33"
+    },
+    {
+      "type": "custom",
+      "outputColor": "#f562a8",
+      "format": "└{$1}─────────────────────────{$1}┘"
+    },
+    {
+      "type": "title",
+      "outputColor": "#f562a8",
+      "format": "┌{$1}──────── Storage ────────{$1}┐"
+    },
+    {
+      "type": "packages",
+      "format": "{pacman} (pacman), {flatpak-all} (flatpak)",
+      "key": "pkgs",
+      "keyColor": "33"
+    },
+    {
+      "type": "disk",
+      "key": "disk",
+      "format": "{size-used} / {size-total} ({size-percentage})",
+      "keyColor": "33"
+    },
+    {
+      "type": "custom",
+      "outputColor": "#f562a8",
+      "format": "└{$1}─────────────────────────{$1}┘"
+    },
+    {
+      "type": "title",
+      "outputColor": "#f562a8",
+      "format": "┌{$1}──────── Display ────────{$1}┐"
+    },
+    {
+      "type": "display",
+      "key": "mon",
+      "format": " {name} {preferred-width}x{preferred-height}@{refresh-rate}Hz",
+      "keyColor": "33"
+    },
+    {
+      "type": "custom",
+      "outputColor": "#f562a8",
+      "format": "└{$1}─────────────────────────{$1}┘"
+    },
+    {
+      "type": "custom",
+      "outputColor": "#f03d88",
+      "format": "     └{$1}───────────────{$1}┘"
+    },
+    "break",
+    "break"
+  ]
 }

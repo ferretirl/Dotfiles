@@ -6,12 +6,11 @@ order = [ "uwu" ]
     border = "surface"
     end = [ "tray", "notifications", "media" ]
     font_weight = 400
-    margin_edge = 10.0
-    margin_ends = 100.0
+    margin_ends = 100
     padding = 15
     radius = 20
     scale = 1.350000012665987
-    start = [ "workspaces" ]
+    start = [ "workspaces", "active_window" ]
     thickness = 40
 
 [desktop_widgets]
@@ -32,26 +31,26 @@ scale = 0.7500000037252903
 scale = 0.7500000037252903
 
 [shell]
-avatar_path = "/home/ferret/Pictures/hina/c4fe544f8dc197413f335e727d561962.webp"
+avatar_path = "/home/ferret/Downloads/76d2ed7cc08e67529469189cbd81d516.webp"
 clipboard_auto_paste = "off"
 clipboard_history_max_entries = 100.0
 corner_radius_scale = 0.5000000074505806
 date_format = "{:%A}, {:/%d/%m/%Y}"
-font_family = "Agave Nerd Font Mono"
+font_family = "CaskaydiaCove NFM"
 lang = "en"
 polkit_agent = true
-settings_show_advanced = false
+settings_show_advanced = true
 show_location = false
-ui_scale = 1.2000000104308128
+ui_scale = 1.25
 
     [shell.panel]
     launcher_categories = false
     launcher_placement = "attached"
 
 [theme]
-builtin = "Rosé Pine"
-community_palette = "Monochrome"
-custom_palette = "monochrome"
+builtin = "Catppuccin"
+community_palette = "Catppuccin Lavender"
+custom_palette = "UwU"
 source = "custom"
 
     [theme.templates]
@@ -63,19 +62,26 @@ directory = "/home/ferret/Pictures/bg"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "/home/ferret/Pictures/bg/007cYGsBgy1i8my55lvk2j323m0u0duh (1)_upscayl_2x_high-fidelity-4x.png"
+    path = "/home/ferret/Pictures/bg/17515911809700.png"
 
     [wallpaper.last]
-    path = "/home/ferret/Pictures/bg/007cYGsBgy1i8my55lvk2j323m0u0duh (1)_upscayl_2x_high-fidelity-4x.png"
+    path = "/home/ferret/Pictures/bg/17515911809700.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ferret/Pictures/bg/007cYGsBgy1i8my55lvk2j323m0u0duh (1)_upscayl_2x_high-fidelity-4x.png"
+    path = "/home/ferret/Pictures/bg/17515911809700.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ferret/Pictures/bg/007cYGsBgy1i8my55lvk2j323m0u0duh (1)_upscayl_2x_high-fidelity-4x.png"
+    path = "/home/ferret/Pictures/bg/17515911809700.png"
+
+    [[wallpaper.favorite]]
+    path = "/home/ferret/Pictures/bg/17515911809700.png"
+    theme_mode = "auto"
 
 [weather]
 address = "Uhersky Brod, Czech Republic"
+
+[widget.active_window]
+max_length = 450
 
 [widget.clock]
 format = "{:%H:%M} {:/%d/%m/%Y}"
@@ -85,6 +91,8 @@ max_length = 450.0
 title_scroll = "on_hover"
 
 [widget.workspaces]
-empty_color = "tertiary"
-focused_color = "error"
+empty_color = "outline"
+focused_color = "secondary"
 minimal = true
+occupied_color = "outline"
+scale = 1.1500000000000001
