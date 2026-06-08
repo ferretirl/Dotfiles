@@ -71,14 +71,12 @@ hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("equibop"))
 hl.bind("SUPER + D", hl.dsp.exec_cmd("equibop", { float = false, move = { 0, 0 } }))
 hl.bind("SUPER + M", hl.dsp.workspace.toggle_special("feishin"))
 hl.bind("SUPER + M", hl.dsp.exec_cmd("feishin", { float = false, move = { 0, 0 } }))
+
 -- Screenshot
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z -s"))
 
 -- Color picker
 hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd("hyprpicker -a"))
-
--- Exit
-hl.bind("SUPER + SHIFT + E", hl.dsp.exit())
 
 -- Noctalia IPC
 hl.bind("SUPER + V", hl.dsp.exec_cmd(noctalia .. " panel-toggle clipboard"))

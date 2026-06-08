@@ -65,7 +65,7 @@ local opacityClasses = {
 	"dev.noctalia.Noctalia.Settings",
 }
 for _, opacity in ipairs(opacityClasses) do
-	hl.window_rule({ match = { class = opacity }, opacity = 0.87 })
+	hl.window_rule({ match = { class = opacity }, opacity = 0.81 })
 end
 
 -- PiP - pin to all workspaces
@@ -121,4 +121,14 @@ hl.window_rule({
 	name = "brave-focus",
 	match = { class = "brave-origin-beta" },
 	focus_on_activate = true,
+})
+
+hl.layer_rule({
+	name = "noctalia",
+	match = {
+		namespace = "^noctalia-(bar-.+|notification|dock|panel|osd)$",
+	},
+	ignore_alpha = 0.5,
+	blur = true,
+	blur_popups = true,
 })

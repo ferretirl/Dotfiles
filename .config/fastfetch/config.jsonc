@@ -2,13 +2,13 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "kitty",
-    "source": "/home/ferret/.config/fastfetch/buros.png",
-    "width": 35,
+    "source": "/home/ferret/.config/fastfetch/missile228.png",
+    "width": 28,
     "recache": false,
     "preserveAspectRatio": true,
     "padding": {
-      "top": 0,
-      "left": 1,
+      "top": 1,
+      "left": 3,
       "right": 3
     }
   },
@@ -31,17 +31,14 @@
   },
   "modules": [
     "break",
-    "break",
-    "break",
-    "break",
     {
       "type": "custom",
-      "outputColor": "#f03d88",
+      "outputColor": "magenta",
       "format": "     ┏{$1}━━━━━━━━━━━━━━{$1}┓"
     },
     {
       "type": "title",
-      "outputColor": "#f562a8",
+      "outputColor": "yellow",
       "format": "┏{$1}━━━━ {user-name}@{host-name} ━━━━{$1}┓"
     },
     {
@@ -68,12 +65,12 @@
     },
     {
       "type": "custom",
-      "outputColor": "#f562a8",
+      "outputColor": "yellow",
       "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
     },
     {
       "type": "title",
-      "outputColor": "#f562a8",
+      "outputColor": "yellow",
       "format": "┏{$1}━━━━━━━━ Storage ━━━━━━━━{$1}┓"
     },
     {
@@ -90,12 +87,12 @@
     },
     {
       "type": "custom",
-      "outputColor": "#f562a8",
+      "outputColor": "yellow",
       "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
     },
     {
       "type": "title",
-      "outputColor": "#f562a8",
+      "outputColor": "yellow",
       "format": "┏{$1}━━━━━━━━ Display ━━━━━━━━{$1}┓"
     },
     {
@@ -106,12 +103,12 @@
     },
     {
       "type": "custom",
-      "outputColor": "#f562a8",
+      "outputColor": "yellow",
       "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
     },
     {
       "type": "custom",
-      "outputColor": "#f03d88",
+      "outputColor": "magenta",
       "format": "     ┗{$1}━━━━━━━━━━━━━━━{$1}┛"
     },
     "break",
