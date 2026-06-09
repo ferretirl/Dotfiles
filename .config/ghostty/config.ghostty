@@ -9,8 +9,8 @@ background-opacity = 0.81
 cursor-style = bar 
 cursor-style-blink = false
 
- window-padding-x = 5
- window-padding-y = 5
+window-padding-x = 5
+window-padding-y = 5
 
 confirm-close-surface = false
 

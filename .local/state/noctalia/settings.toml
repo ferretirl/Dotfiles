@@ -56,7 +56,7 @@ mode = "auto"
 source = "custom"
 
     [theme.templates]
-    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "ghostty", "hyprland", "qt", "starship" ]
+    builtin_ids = [ "btop", "cava", "foot", "gtk3", "gtk4", "hyprland", "kitty", "qt", "starship" ]
     community_ids = [ "yazi", "discord" ]
 
 [wallpaper]

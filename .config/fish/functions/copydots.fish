@@ -9,6 +9,10 @@ function copydots
     rm -rf ~/Dotfiles/.config/ghostty
     cp -r ~/.config/ghostty ~/Dotfiles/.config/
 
+    echo "  → kitty"
+    rm -rf ~/Dotfiles/.config/kitty
+    cp -r ~/.config/kitty ~/Dotfiles/.config/
+
     echo "  → fish"
     rm -rf ~/Dotfiles/.config/fish
     cp -r ~/.config/fish ~/Dotfiles/.config/
