@@ -15,17 +15,22 @@ truncate_to_repo = true
 style = ""
 
 [git_branch]
-format = " [on](dimmed white) [$branch](yellow)"
+format = " [[ ](green bold)$branch](lavender)"
 symbol = ""
 
 [git_status]
-format = '[ \[$all_status$ahead_behind\]](yellow)'
-staged = "+"
-modified = "~"
-untracked = "?"
-ahead = "⇡$count"
-behind = "⇣$count"
-diverged = "⇕"
+format = '[ $all_status$ahead_behind](yellow)'
+conflicted = "="
+ahead =	"⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+up_to_date = " 󰄬 "
+untracked = " ?${count} "
+stashed = " 󰏖 "
+modified = " !${count} "
+staged = " +${count} "
+renamed = " »${count} "
+deleted = " 󰅖${count} "
 
 [character]
 success_symbol = ""
