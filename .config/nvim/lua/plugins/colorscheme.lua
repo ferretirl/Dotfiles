@@ -1,8 +1,8 @@
 return {
   dir = "/home/ferret/.config/nvim/colors",
-  name = "noctalia",
+  name = "aroace",
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme("noctalia")
+    vim.cmd.colorscheme("aroace")
   end,
 }

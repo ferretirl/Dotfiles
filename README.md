@@ -2,7 +2,7 @@
 
 Window Manager: Hyprland
 
-Terminal: ghostty
+Terminal: kitty 
 
 Shell: fish
 

@@ -7,7 +7,7 @@ fish_add_path ~/.cargo/bin
 
 if status is-interactive
     set fish_greeting
-    fastfetch
+    fastfetch | gay --aroace -i 2d
 
     if test "$TERM" != linux
     end

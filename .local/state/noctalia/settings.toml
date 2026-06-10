@@ -37,7 +37,7 @@ clipboard_auto_paste = "off"
 clipboard_history_max_entries = 100.0
 corner_radius_scale = 0.5000000074505806
 date_format = "{:%A}, {:/%d/%m/%Y}"
-font_family = "Maple Mono Normal NL NF CN"
+font_family = "RecMonoCasual Nerd Font"
 lang = "en"
 polkit_agent = true
 settings_show_advanced = true
@@ -51,7 +51,7 @@ ui_scale = 1.25
 [theme]
 builtin = "Catppuccin"
 community_palette = "Catppuccin Lavender"
-custom_palette = "gothic"
+custom_palette = "aroace"
 mode = "auto"
 source = "custom"
 
@@ -64,16 +64,16 @@ directory = "/home/ferret/Pictures"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "/home/ferret/Pictures/missile228/__original_drawn_by_missile228__d8f5bf32aee38a90986ccd65223edit459a4.jpg"
+    path = "/home/ferret/Pictures/missile228/__minato_yukina_bang_dream_and_1_more_drawn_by_missile228__695de658b6307editc1a4e469c8b1c8e4002_upscayl_2x_high-fidelity-4x.png"
 
     [wallpaper.last]
-    path = "/home/ferret/Pictures/missile228/__original_drawn_by_missile228__d8f5bf32aee38a90986ccd65223edit459a4.jpg"
+    path = "/home/ferret/Pictures/missile228/__minato_yukina_bang_dream_and_1_more_drawn_by_missile228__695de658b6307editc1a4e469c8b1c8e4002_upscayl_2x_high-fidelity-4x.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ferret/Pictures/missile228/__original_drawn_by_missile228__d8f5bf32aee38a90986ccd65223edit459a4.jpg"
+    path = "/home/ferret/Pictures/missile228/__minato_yukina_bang_dream_and_1_more_drawn_by_missile228__695de658b6307editc1a4e469c8b1c8e4002_upscayl_2x_high-fidelity-4x.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ferret/Pictures/missile228/__original_drawn_by_missile228__d8f5bf32aee38a90986ccd65223edit459a4.jpg"
+    path = "/home/ferret/Pictures/missile228/__minato_yukina_bang_dream_and_1_more_drawn_by_missile228__695de658b6307editc1a4e469c8b1c8e4002_upscayl_2x_high-fidelity-4x.png"
 
     [[wallpaper.favorite]]
     path = "/home/ferret/Pictures/bg/17515911809700.png"

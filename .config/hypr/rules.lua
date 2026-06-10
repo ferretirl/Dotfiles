@@ -20,6 +20,7 @@ local floatTitles = {
 	".*Welcome",
 	"^[Pp]icture[-%s]?[Ii]n[-%s]?[Pp]icture",
 	".*is sharing (a window|your screen).*",
+	"^Friends List",
 }
 for _, floatd in ipairs(floatTitles) do
 	hl.window_rule({ match = { title = floatd }, float = true })
@@ -60,7 +61,7 @@ end
 -- Opacity for apps
 local opacityClasses = {
 	-- "com.mitchellh.ghostty",
-	"feishin",
+	-- "feishin",
 	"^[tT]hunar$",
 	"dev.noctalia.Noctalia.Settings",
 }
