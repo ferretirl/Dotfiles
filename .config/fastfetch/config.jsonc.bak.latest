@@ -1,0 +1,118 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "/home/ferret/.config/fastfetch/missile228.png",
+    "width": 28,
+    "recache": false,
+    "preserveAspectRatio": true,
+    "padding": {
+      "top": 1,
+      "left": 3,
+      "right": 5
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "constants": [
+      "━━━━━━"
+    ],
+    "key": {
+      "paddingLeft": 2
+    },
+    "percent": {
+      "type": 9, // 1=number, 2=bar, 3=both, 9=colored number
+      "color": {
+        "green": "green",
+        "yellow": "yellow",
+        "red": "red"
+      }
+    }
+  },
+  "modules": [
+    "break",
+    "break",
+    {
+      "type": "custom",
+      "outputColor": "magenta",
+      "format": "     ┏{$1}━━━━━━━━━━━━━━{$1}┓"
+    },
+    {
+      "type": "title",
+      "outputColor": "yellow",
+      "format": "┏{$1}━━━━ {user-name}@{host-name} ━━━━{$1}┓"
+    },
+    {
+      "type": "os",
+      "key": "os  ",
+      "keyColor": "33"
+    },
+    {
+      "type": "kernel",
+      "key": "krnl",
+      "keyColor": "33"
+    },
+    {
+      "type": "wm",
+      "key": "wm",
+      "format": "  {pretty-name} {version}",
+      "keyColor": "33"
+    },
+    {
+      "type": "memory",
+      "key": "ram",
+      "format": " {used} / {total} ({percentage})",
+      "keyColor": "33"
+    },
+    {
+      "type": "custom",
+      "outputColor": "yellow",
+      "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
+    },
+    {
+      "type": "title",
+      "outputColor": "yellow",
+      "format": "┏{$1}━━━━━━━━ Storage ━━━━━━━━{$1}┓"
+    },
+    {
+      "type": "packages",
+      "format": "{pacman} (pacman), {flatpak-all} (flatpak)",
+      "key": "pkgs",
+      "keyColor": "33"
+    },
+    {
+      "type": "disk",
+      "key": "disk",
+      "format": "{size-used} / {size-total} ({size-percentage})",
+      "keyColor": "33"
+    },
+    {
+      "type": "custom",
+      "outputColor": "yellow",
+      "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
+    },
+    {
+      "type": "title",
+      "outputColor": "yellow",
+      "format": "┏{$1}━━━━━━━━ Display ━━━━━━━━{$1}┓"
+    },
+    {
+      "type": "display",
+      "key": "mon",
+      "format": " {name} {preferred-width}x{preferred-height}@{refresh-rate}Hz",
+      "keyColor": "33"
+    },
+    {
+      "type": "custom",
+      "outputColor": "yellow",
+      "format": "┗{$1}━━━━━━━━━━━━━━━━━━━━━━━━━{$1}┛"
+    },
+    {
+      "type": "custom",
+      "outputColor": "magenta",
+      "format": "     ┗{$1}━━━━━━━━━━━━━━━{$1}┛"
+    },
+    "break",
+    "break"
+  ]
+}

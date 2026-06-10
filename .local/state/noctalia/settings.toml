@@ -64,16 +64,16 @@ directory = "/home/ferret/Pictures"
 transition = [ "fade" ]
 
     [wallpaper.default]
-    path = "/home/ferret/Pictures/missile228/__minato_yukina_bang_dream_and_1_more_drawn_by_missile228__695de658b6307editc1a4e469c8b1c8e4002_upscayl_2x_high-fidelity-4x.png"
+    path = "/home/ferret/Pictures/missile228/missile228judgement_upscayl_2x_high-fidelity-4x.png"
 
     [wallpaper.last]
-    path = "/home/ferret/Pictures/missile228/__minato_yukina_bang_dream_and_1_more_drawn_by_missile228__695de658b6307editc1a4e469c8b1c8e4002_upscayl_2x_high-fidelity-4x.png"
+    path = "/home/ferret/Pictures/missile228/missile228judgement_upscayl_2x_high-fidelity-4x.png"
 
     [wallpaper.monitors.DP-1]
-    path = "/home/ferret/Pictures/missile228/__minato_yukina_bang_dream_and_1_more_drawn_by_missile228__695de658b6307editc1a4e469c8b1c8e4002_upscayl_2x_high-fidelity-4x.png"
+    path = "/home/ferret/Pictures/missile228/missile228judgement_upscayl_2x_high-fidelity-4x.png"
 
     [wallpaper.monitors.DP-2]
-    path = "/home/ferret/Pictures/missile228/__minato_yukina_bang_dream_and_1_more_drawn_by_missile228__695de658b6307editc1a4e469c8b1c8e4002_upscayl_2x_high-fidelity-4x.png"
+    path = "/home/ferret/Pictures/missile228/missile228judgement_upscayl_2x_high-fidelity-4x.png"
 
     [[wallpaper.favorite]]
     path = "/home/ferret/Pictures/bg/17515911809700.png"

@@ -124,6 +124,14 @@ hl.window_rule({
 	focus_on_activate = true,
 })
 
+hl.window_rule({
+	name = "filepickeryazi",
+	match = { title = "file chooser", class = "kitty" },
+	center = true,
+	float = true,
+	size = { "monitor_w * 0.6", "monitor_h * 0.6" },
+})
+
 hl.layer_rule({
 	name = "noctalia",
 	match = {
