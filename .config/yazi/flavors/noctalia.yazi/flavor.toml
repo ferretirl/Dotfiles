@@ -51,13 +51,13 @@ perm_sep = { fg = "#ae6101" }
 [mode]
 
 normal_main = { bg = "#f2b870", fg = "#070707", bold = true }
-normal_alt  = { bg = "#141414", fg = "#faf0e4" }
+normal_alt  = { bg = "#141414", fg = "#f7ddb0" }
 
 select_main = { bg = "#8bbfd6", fg = "#070707", bold = true }
-select_alt  = { bg = "#141414", fg = "#faf0e4" }
+select_alt  = { bg = "#141414", fg = "#f7ddb0" }
 
 unset_main = { bg = "#6a9ab8", fg = "#faf0e4", bold = true }
-unset_alt  = { bg = "#141414", fg = "#faf0e4" }
+unset_alt  = { bg = "#141414", fg = "#f7ddb0" }
 
 # : ]]]
 

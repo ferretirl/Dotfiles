@@ -3,7 +3,8 @@
   "logo": {
     "source": "~/.config/fastfetch/arch.txt",
     "padding": {
-      "top": 1
+      "top": 2,
+      "left": 2
     }
   },
   "display": {
@@ -16,43 +17,45 @@
     {
       "type": "os",
       "key": "os    ",
-      "keyColor": "33",
+      "format": "{pretty-name}",
+      "keyColor": "33"
     },
     {
       "type": "kernel",
-      "key": "kernel",
-      "keyColor": "33",
+      "key": "krnl  ",
+      "format": "{release}",
+      "keyColor": "33"
     },
     {
       "type": "host",
       "format": "{5} {1}",
       "key": "host  ",
-      "keyColor": "33",
+      "keyColor": "33"
     },
     {
       "type": "packages",
       "format": "{} (pacman)",
       "key": "pkgs  ",
-      "keyColor": "33",
-    },
-    {
-      "type": "gpu",
-      "format": "   dogshit",
-      "key": "gpu",
-      "keyColor": "33",
-    },
-    {
-      "type": "cpu",
-      "format": "   even worse",
-      "key": "cpu",
-      "keyColor": "33",
+      "keyColor": "33"
     },
     {
       "type": "memory",
-      "key": "memory",
-      "keyColor": "33",
+      "key": "mem   ",
+      "keyColor": "33"
+    },
+    {
+      "type": "uptime",
+      "format": "{formatted}",
+      "key": "live  ",
+      "keyColor": "33"
+    },
+    {
+      "type": "command",
+      "key": "age   ",
+      "keyColor": "1",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
     },
     "break",
-    "break",
+    "break"
   ]
 }
